@@ -739,6 +739,7 @@ def build_annex_vi_table(doc: Document, annex: Tag) -> None:
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.autofit = True
     configure_annex_vi_borders(table)
+    row_idx = 0
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.autofit = True
     for tr in html_table.find_all("tr"):
@@ -754,11 +755,12 @@ def build_annex_vi_table(doc: Document, annex: Tag) -> None:
         row.cells[1].vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
         row.cells[0].text = extracted[0]
         row.cells[1].text = "\n".join(extracted[1:]) if len(extracted) > 1 else ""
-        is_header = row_idx == 0
-        if row_idx == 0:
-            set_header_row_border(row)
+        is_header = any(c.name == "th" or "oj-tbl-hdr" in tag_classes(c) for c in cells)
         set_cell_font(row.cells[0], bold=is_header)
         set_cell_font(row.cells[1], bold=is_header)
+        if row_idx == 0:
+            set_header_row_border(row)
+        row_idx += 1
 
 
 def add_annexes(doc: Document, soup: BeautifulSoup) -> None:
