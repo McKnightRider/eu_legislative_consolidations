@@ -736,7 +736,8 @@ def build_annex_vi_table(doc: Document, annex: Tag) -> None:
         add_para(doc, text_with_footnote_tokens(annex), left_cm=0)
         return
     table = doc.add_table(rows=0, cols=2)
-    table.style = "Table Normal"
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.autofit = True
     configure_annex_vi_borders(table)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.autofit = True
