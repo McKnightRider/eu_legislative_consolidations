@@ -1,6 +1,6 @@
 
 """
-formatting_stage2_v63.py
+formatting_stage2_v6.py
 
 EUR-Lex / Official Journal XHTML -> formatted Word document.
 
