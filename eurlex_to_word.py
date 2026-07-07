@@ -203,6 +203,6 @@ def convert_to_word(
 if __name__ == "__main__":
 
     convert_to_word(
-        "../html_to_word/1260706_EUPR_Original.html",
+        "../html_to_word/260706_EUPR_Original.html",
         "Prospectus_Regulation_Structured.docx"
     )
