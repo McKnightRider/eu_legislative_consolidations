@@ -40,6 +40,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt
 from lxml import etree
+from docx.oxml import OxmlElement
 
 NBSP = "\u00A0"
 FN_TOKEN_RE = re.compile(r"\[\[FN:(\d+)\]\]")
@@ -688,13 +689,55 @@ def emit_annex_structure(
             )
 
 
+def configure_annex_vi_borders(table):
+
+    tbl = table._tbl
+    tblPr = tbl.tblPr
+
+    borders = OxmlElement("w:tblBorders")
+
+    for edge in ("left", "right", "bottom", "insideH"):
+        e = OxmlElement(f"w:{edge}")
+        e.set(qn("w:val"), "nil")
+        borders.append(e)
+
+    top = OxmlElement("w:top")
+    top.set(qn("w:val"), "single")
+    borders.append(top)
+
+    inside_v = OxmlElement("w:insideV")
+    inside_v.set(qn("w:val"), "single")
+    borders.append(inside_v)
+
+    tblPr.append(borders)
+
+
+def set_header_row_border(row):
+
+    for cell in row.cells:
+
+        tcPr = cell._tc.get_or_add_tcPr()
+
+        borders = OxmlElement("w:tcBorders")
+
+        bottom = OxmlElement("w:bottom")
+        bottom.set(qn("w:val"), "single")
+        bottom.set(qn("w:sz"), "8")
+
+        borders.append(bottom)
+
+        tcPr.append(borders)
+
+
+
 def build_annex_vi_table(doc: Document, annex: Tag) -> None:
     html_table = find_largest_html_table(annex)
     if html_table is None:
         add_para(doc, text_with_footnote_tokens(annex), left_cm=0)
         return
     table = doc.add_table(rows=0, cols=2)
-    table.style = "Table Grid"
+    table.style = "Table Normal"
+    configure_annex_vi_borders(table)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.autofit = True
     for tr in html_table.find_all("tr"):
@@ -710,7 +753,9 @@ def build_annex_vi_table(doc: Document, annex: Tag) -> None:
         row.cells[1].vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
         row.cells[0].text = extracted[0]
         row.cells[1].text = "\n".join(extracted[1:]) if len(extracted) > 1 else ""
-        is_header = any(c.name == "th" or "oj-tbl-hdr" in tag_classes(c) for c in cells)
+        is_header = row_idx == 0
+        if row_idx == 0:
+            set_header_row_border(row)
         set_cell_font(row.cells[0], bold=is_header)
         set_cell_font(row.cells[1], bold=is_header)
 
