@@ -38,7 +38,7 @@ from docx import Document
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.oxml.ns import qn
-from docx.shared import Cm, Pt
+from docx.shared import Cm, Pt, RGBColor
 from lxml import etree
 from docx.oxml import OxmlElement
 
@@ -190,7 +190,7 @@ def add_text_with_footnotes(paragraph, text: str, *, size=11, bold=False, italic
             r = paragraph.add_run(text[pos:m.start()])
             set_run_font(r, size=size, bold=bold, italic=italic)
         r = paragraph.add_run(f"[[FN:{m.group(1)}]]")
-        set_run_font(r, size=9)
+        set_run_font(r, size=11)
         r.font.superscript = True
         pos = m.end()
     if pos < len(text):
@@ -260,7 +260,24 @@ def add_center_heading(doc: Document, first_line: str, second_line: str | None =
     return add_heading_lines(doc, first_line, second_line, first_bold=True, first_italic=False, second_bold=True, second_italic=False)
 
 
-def add_para(doc: Document, text: str, *, align=WD_ALIGN_PARAGRAPH.JUSTIFY, left_cm=0, first_line_cm=None, size=11, bold=False, italic=False, before=6, after=6, line_spacing=1.16):
+def split_annex_heading(text: str) -> tuple[str, str | None]:
+    text = clean_text(text)
+    match = re.match(
+        r"^(ANNEX(?:E)?S?)\s*([IVXLCDM]+)(?:\s*[\.\-–—:]+\s*|\s+)(.+)$",
+        text,
+        flags=re.I
+    )
+    if match:
+        first_line = f"{match.group(1).upper()} {match.group(2)}"
+        second_line = match.group(3).strip()
+        return first_line, second_line
+    match = re.match(r"^(ANNEX(?:E)?S?)\s*([IVXLCDM]+)\s*$", text, flags=re.I)
+    if match:
+        return f"{match.group(1).upper()} {match.group(2)}", None
+    return text, None
+
+
+def add_para(doc: Document, text: str, *, align=WD_ALIGN_PARAGRAPH.JUSTIFY, left_cm=0, first_line_cm=None, size=11, bold=False, italic=False, before=6, after=6, line_spacing=1.16, src: str | None = None):
     p = doc.add_paragraph()
     p.alignment = align
     p.paragraph_format.left_indent = Cm(left_cm)
@@ -268,6 +285,8 @@ def add_para(doc: Document, text: str, *, align=WD_ALIGN_PARAGRAPH.JUSTIFY, left
         p.paragraph_format.first_line_indent = Cm(first_line_cm)
     set_para_spacing(p, before=before, after=after, line_spacing=line_spacing)
     add_text_with_footnotes(p, text, size=size, bold=bold, italic=italic)
+    if src:
+        _append_anchor(p, src)
     return p
 
 
@@ -328,6 +347,7 @@ def marker_type(text: str) -> str | None:
     t = clean_text(text)
     if re.match(r"^\d+\.", t):
         return "digit"
+    # prefer single-letter markers as 'letter' to avoid misclassifying (c)/(d)
     if re.match(r"^\([a-z]\)", t):
         return "letter"
     if re.match(r"^\([ivxlcdm]+\)", t, flags=re.I):
@@ -342,7 +362,7 @@ def marker_type(text: str) -> str | None:
 
 
 def is_standalone_marker(text: str) -> bool:
-    return bool(re.match(r"^(\([a-z]\)|\([ivxlcdm]+\)|[A-Z]\.|[IVXLCDM]+\.|—|–)$", clean_text(text), flags=re.I))
+    return bool(re.match(r"^(\([ivxlcdm]+\)|\([a-z]\)|[A-Z]\.|[IVXLCDM]+\.|—|–)$", clean_text(text), flags=re.I))
 
 
 def normalise_marker_spacing(text: str, *, annex_mode=False) -> str:
@@ -355,88 +375,107 @@ def normalise_marker_spacing(text: str, *, annex_mode=False) -> str:
     return text
 
 
-def emit_numbered_paragraph_sequence(doc: Document, paragraphs: list[Tag], *, annex_mode: bool = False) -> None:
-    """Emit legal-style paragraphs using contextual indentation.
+def count_table_ancestors(tag: Tag) -> int:
+    """Count <table> ancestors between this tag and its nearest structural container.
 
-    Indentation principle:
-      - digit paragraph marker starts at 0cm, body at 1cm;
-      - top-level Article 2-style lettered definitions start at 0cm, body at 1cm;
-      - lettered items under a numbered paragraph start at 1cm, body at 2cm;
-      - roman items under a lettered paragraph start at 1cm, body at 2cm, not 2cm/3cm;
-      - unnumbered continuation after a numbered/list item is indented at the current body indent.
+    EUR-Lex encodes list nesting with nested <table> elements:
+      0 tables → top-level (digit markers, chapeau / continuation text)
+      1 table  → letter-level items (a), (b), ..., (i), (j)
+      2 tables → roman sub-items (i), (ii), (iii), ...
+    """
+    count = 0
+    cur = tag.parent
+    while isinstance(cur, Tag):
+        if cur.name == "table":
+            count += 1
+        sid = str(cur.get("id", ""))
+        if sid and STRUCTURAL_ID_RE.match(sid):
+            break
+        cur = cur.parent
+    return count
+
+
+def _append_anchor(para_p, src: str) -> None:
+    """Append a Word-hidden anchor run to an existing paragraph for traceability."""
+    r = para_p.add_run(f" [[SRC:{src}]]")
+    set_run_font(r, size=1)
+    try:
+        r.font.hidden = True
+    except Exception:
+        try:
+            r.font.color.rgb = RGBColor(255, 255, 255)
+        except Exception:
+            pass
+
+
+def emit_numbered_paragraph_sequence(doc: Document, paragraphs: list[Tag], *, annex_mode: bool = False) -> None:
+    """Emit legal-style paragraphs using HTML table-nesting depth for indentation.
+
+    The EUR-Lex HTML encodes list nesting via nested <table> elements.
+    count_table_ancestors() returns 0, 1, 2 ... which maps directly to left_cm
+    for hanging-indent marker paragraphs:
+      tbl_depth=0 → left=0cm, hanging=-1cm  (digit markers)
+      tbl_depth=1 → left=1cm, hanging=-1cm  (letter items)
+      tbl_depth=2 → left=2cm, hanging=-1cm  (roman sub-items)
+
+    No marker-type stack or disambiguation is needed; the HTML structure is
+    authoritative and avoids (c)/(d)/(i) misclassification as roman numerals.
     """
     i = 0
-    last_marker: str | None = None
-    active_digit = False
-    active_letter = False
-    current_body_indent = 0
-
     while i < len(paragraphs):
-        txt = text_with_footnote_tokens(paragraphs[i])
+        p_tag = paragraphs[i]
+        txt = text_with_footnote_tokens(p_tag)
         if not txt:
             i += 1
             continue
 
+        base_id = nearest_structural_id(p_tag) or "unknown"
+        src_marker = f"{base_id}.{i}"
+        tbl_depth = count_table_ancestors(p_tag)
+        left_cm = tbl_depth  # 0, 1, 2, ... maps directly to user indent rules
+
         if is_standalone_marker(txt) and i + 1 < len(paragraphs):
-            nxt = text_with_footnote_tokens(paragraphs[i + 1])
-            sep = "\t"
-            combined = f"{txt}{sep}{nxt}" if nxt else txt
+            # Combine standalone marker + following body into one hanging paragraph
+            nxt_txt = text_with_footnote_tokens(paragraphs[i + 1])
+            src_body = f"{base_id}.{i + 1}"
+            joined = normalise_marker_spacing(f"{txt}\t{nxt_txt}", annex_mode=annex_mode)
+            p = add_para(doc, joined, left_cm=left_cm, first_line_cm=-1, src=src_marker)
+            _append_anchor(p, src_body)
             i += 2
-        else:
+        elif marker_type(txt):
+            # Marker already has inline body text (e.g. "1.\tThis Regulation...")
             combined = normalise_marker_spacing(txt, annex_mode=annex_mode)
+            add_para(doc, combined, left_cm=left_cm, first_line_cm=-1, src=src_marker)
             i += 1
-
-        mtype = marker_type(combined)
-
-        if annex_mode:
-            # Annex A./B. entries: marker at 0cm, following text after tab at 1cm.
-            if mtype in {"annex-letter", "annex-roman"}:
-                add_para(doc, combined, left_cm=1, first_line_cm=-1)
-                current_body_indent = 1
-            else:
-                add_para(doc, combined, left_cm=current_body_indent)
-            continue
-
-        if mtype == "digit":
-            add_para(doc, combined, left_cm=1, first_line_cm=-1)
-            active_digit = True
-            active_letter = False
-            current_body_indent = 1
-        elif mtype == "letter":
-            if active_digit:
-                # e.g. Article 1(4)(a): marker at 1cm, body at 2cm.
-                add_para(doc, combined, left_cm=2, first_line_cm=-1)
-                current_body_indent = 2
-            else:
-                # e.g. Article 2(a): marker at 0cm, body at 1cm.
-                add_para(doc, combined, left_cm=1, first_line_cm=-1)
-                current_body_indent = 1
-            active_letter = True
-        elif mtype in {"roman", "dash"}:
-            if active_letter:
-                # User-requested correction: Article 1(4)(j)(i), Article 1(5)(i)(i)
-                # and Article 1(5)(j)(i)-(v) should start at 1cm, not 2cm.
-                add_para(doc, combined, left_cm=2, first_line_cm=-1)
-                current_body_indent = 2
-            elif active_digit:
-                add_para(doc, combined, left_cm=2, first_line_cm=-1)
-                current_body_indent = 2
-            else:
-                add_para(doc, combined, left_cm=1, first_line_cm=-1)
-                current_body_indent = 1
         else:
-            # Continuation/chapeau.  Article 2's first line has no active digit/list,
-            # so it is flush left.  Article 1(3)'s second paragraph follows a digit
-            # paragraph and is therefore indented by 1cm.
-            add_para(doc, combined, left_cm=current_body_indent if (active_digit or active_letter or last_marker) else 0)
-
-        if mtype:
-            last_marker = mtype
+            # Continuation / body-only text sits at the same left_cm as the
+            # enclosing marker level (tbl_depth).  tbl_depth=0 → flush left (0cm);
+            # tbl_depth=1 → 1cm (aligned with letter marker); etc.
+            add_para(doc, normalise_marker_spacing(txt, annex_mode=annex_mode), left_cm=tbl_depth, src=src_marker)
+            i += 1
 
 
 # =============================================================================
 # Main sections
 # =============================================================================
+
+def add_enacting_entities(doc: Document, soup: BeautifulSoup) -> None:
+    """Emit the opening formula (e.g. 'THE EUROPEAN PARLIAMENT AND THE COUNCIL…')
+    that appears directly before the citations in the preamble block."""
+    pbl = soup.find(id="pbl_1")
+    if not pbl:
+        return
+    for child in pbl.children:
+        if not isinstance(child, Tag):
+            continue
+        # Stop as soon as we reach the first citation container
+        if re.match(r"^cit_", str(child.get("id", ""))):
+            break
+        if "oj-normal" in tag_classes(child):
+            txt = text_with_footnote_tokens(child)
+            if txt:
+                add_para(doc, txt, left_cm=0)
+
 
 def add_citations(doc: Document, soup: BeautifulSoup) -> None:
     for cit in soup.find_all(id=re.compile(r"^cit_\d+$")):
@@ -609,11 +648,12 @@ def emit_annex_structure(
             continue
 
         #
-        # Main Annex headings.
+        # Main Annex headings and their explanatory text.
         #
         # Example:
         #   I. Summary
         #   II. Identity of directors...
+        #   The purpose is to identify...
         #
         if (
             node.name == "div"
@@ -621,19 +661,65 @@ def emit_annex_structure(
             in tag_classes(node)
         ):
 
-            text = re.sub(
-                r"^([IVXLCDM]+\.)\s+",
-                r"\1\t",
-                text,
-                flags=re.I
-            )
+            heading_parts: list[str] = []
+            body_parts: list[str] = []
+            table_nodes: list[Tag] = []
 
-            add_para(
-                doc,
-                text,
-                left_cm=1,
-                first_line_cm=-1
-            )
+            for child in node.children:
+                if isinstance(child, NavigableString):
+                    txt = clean_text(str(child))
+                    if txt:
+                        heading_parts.append(txt)
+                elif isinstance(child, Tag):
+                    if child.name == "table":
+                        table_nodes.append(child)
+                    elif "oj-normal" in tag_classes(child):
+                        body_text = text_with_footnote_tokens(child)
+                        if body_text:
+                            body_parts.append(body_text)
+                    else:
+                        child_text = text_with_footnote_tokens(child)
+                        if child_text:
+                            heading_parts.append(child_text)
+
+            heading_text = " ".join(part for part in heading_parts if part)
+            if heading_text:
+                # normalise annex markers (I., A.) to use a tab after the marker
+                heading_text = normalise_marker_spacing(heading_text, annex_mode=True)
+                add_para(
+                    doc,
+                    heading_text,
+                    left_cm=1,
+                    first_line_cm=-1
+                )
+
+            for body_text in body_parts:
+                if body_text:
+                    add_para(
+                        doc,
+                        body_text,
+                        left_cm=1,
+                        first_line_cm=0
+                    )
+
+            for table_node in table_nodes:
+                for row in table_node.find_all("tr"):
+                    cells = row.find_all(["td", "th"])
+                    if not cells:
+                        continue
+                    cell_texts = [cell_text_from_html(cell) for cell in cells]
+                    cell_texts = [t for t in cell_texts if t]
+                    if not cell_texts:
+                        continue
+                    row_text = "\t".join(cell_texts)
+                    # normalise markers inside annex table rows (A., I.)
+                    row_text = normalise_marker_spacing(row_text, annex_mode=True)
+                    add_para(
+                        doc,
+                        row_text,
+                        left_cm=2,
+                        first_line_cm=-1
+                    )
 
             continue
 
@@ -645,29 +731,22 @@ def emit_annex_structure(
 
             for row in node.find_all("tr"):
 
-                cells = row.find_all("td")
+                cells = row.find_all(["td", "th"])
 
-                if len(cells) != 2:
+                if not cells:
                     continue
 
-                marker = clean_text(
-                    cells[0].get_text(
-                        " ",
-                        strip=True
-                    )
-                )
+                cell_texts = [cell_text_from_html(cell) for cell in cells]
+                cell_texts = [t for t in cell_texts if t]
+                if not cell_texts:
+                    continue
 
-                title = clean_text(
-                    cells[1].get_text(
-                        " ",
-                        strip=True
-                    )
-                )
+                row_text = "\t".join(cell_texts)
 
                 add_para(
                     doc,
-                    f"{marker}\t{title}",
-                    left_cm=1,
+                    row_text,
+                    left_cm=2,
                     first_line_cm=-1
                 )
 
@@ -731,6 +810,24 @@ def set_header_row_border(row):
 
 
 def build_annex_vi_table(doc: Document, annex: Tag) -> None:
+    heading_lines = [
+        clean_text(p.get_text(" ", strip=True))
+        for p in annex.select("p.oj-ti-tbl")
+        if clean_text(p.get_text(" ", strip=True))
+    ]
+    if heading_lines:
+        first_line = heading_lines[0]
+        second_line = heading_lines[1] if len(heading_lines) > 1 else None
+        add_heading_lines(
+            doc,
+            first_line,
+            second_line,
+            first_bold=False,
+            first_italic=False,
+            second_bold=False,
+            second_italic=False,
+        )
+
     html_table = find_largest_html_table(annex)
     if html_table is None:
         add_para(doc, text_with_footnote_tokens(annex), left_cm=0)
@@ -767,21 +864,27 @@ def add_annexes(doc: Document, soup: BeautifulSoup) -> None:
 
     for annex in soup.find_all(id=re.compile(r"^anx_[IVXLCDM]+$")):
 
-        heading = annex.select_one("p.oj-doc-ti")
+        headings = annex.select("p.oj-doc-ti")
 
-        heading_text = (
-            clean_text(
-                heading.get_text(" ", strip=True)
-            )
-            if heading
-            else str(
-                annex.get("id", "Annex")
-            )
-        )
+        if headings:
+            heading_texts = [clean_text(h.get_text(" ", strip=True)) for h in headings[:2]]
+            if len(heading_texts) == 1:
+                heading_texts.append(None)
+            first_line, second_line = split_annex_heading(heading_texts[0])
+            if heading_texts[1]:
+                second_line = heading_texts[1]
+        else:
+            first_line, second_line = str(annex.get("id", "Annex")), None
 
-        hp = add_center_heading(
+        first_line = first_line.upper()
+        hp = add_heading_lines(
             doc,
-            heading_text
+            first_line,
+            second_line,
+            first_bold=False,
+            first_italic=True,
+            second_bold=True,
+            second_italic=False,
         )
 
         hp.paragraph_format.page_break_before = True
@@ -831,8 +934,8 @@ def make_footnote_reference_run(fid: int) -> etree._Element:
     rfonts = etree.SubElement(rpr, w_tag("rFonts"))
     rfonts.set(w_tag("ascii"), "Arial")
     rfonts.set(w_tag("hAnsi"), "Arial")
-    sz = etree.SubElement(rpr, w_tag("sz")); sz.set(w_tag("val"), "18")
-    szcs = etree.SubElement(rpr, w_tag("szCs")); szcs.set(w_tag("val"), "18")
+    sz = etree.SubElement(rpr, w_tag("sz")); sz.set(w_tag("val"), "22")
+    szcs = etree.SubElement(rpr, w_tag("szCs")); szcs.set(w_tag("val"), "22")
     vert = etree.SubElement(rpr, w_tag("vertAlign")); vert.set(w_tag("val"), "superscript")
     ref = etree.SubElement(r, w_tag("footnoteReference")); ref.set(w_tag("id"), str(fid))
     return r
@@ -880,9 +983,13 @@ def create_footnotes_xml(id_to_text: dict[int, str]) -> bytes:
         fn = etree.SubElement(root, w_tag("footnote")); fn.set(w_tag("id"), str(fid))
         p = etree.SubElement(fn, w_tag("p"))
         ppr = etree.SubElement(p, w_tag("pPr"))
-        etree.SubElement(ppr, w_tag("pStyle")).set(w_tag("val"), "FootnoteText")
-        ind = etree.SubElement(ppr, w_tag("ind")); ind.set(w_tag("left"), "567"); ind.set(w_tag("hanging"), "567")
+        # OOXML schema order: tabs → spacing → ind → jc
+        tabs = etree.SubElement(ppr, w_tag("tabs"))
+        tab_stop = etree.SubElement(tabs, w_tag("tab"))
+        tab_stop.set(w_tag("val"), "left"); tab_stop.set(w_tag("pos"), "284")
         spacing = etree.SubElement(ppr, w_tag("spacing")); spacing.set(w_tag("before"), "0"); spacing.set(w_tag("after"), "0"); spacing.set(w_tag("line"), "240"); spacing.set(w_tag("lineRule"), "auto")
+        ind = etree.SubElement(ppr, w_tag("ind")); ind.set(w_tag("left"), "284"); ind.set(w_tag("hanging"), "284")
+        jc = etree.SubElement(ppr, w_tag("jc")); jc.set(w_tag("val"), "both")
         r_ref = etree.SubElement(p, w_tag("r")); rpr = etree.SubElement(r_ref, w_tag("rPr"))
         etree.SubElement(rpr, w_tag("rStyle")).set(w_tag("val"), "FootnoteReference")
         rfonts_ref = etree.SubElement(rpr, w_tag("rFonts")); rfonts_ref.set(w_tag("ascii"), "Arial"); rfonts_ref.set(w_tag("hAnsi"), "Arial")
@@ -954,6 +1061,7 @@ def build_document(html_path: str | Path, output_path: str | Path) -> Path:
     title = soup.select_one("div.eli-main-title") or soup.select_one(".eli-main-title")
     if title:
         add_title(doc, clean_text(title.get_text(" ", strip=True)))
+    add_enacting_entities(doc, soup)
     add_citations(doc, soup)
     add_recitals(doc, soup)
     add_adoption_formula(doc, soup)
