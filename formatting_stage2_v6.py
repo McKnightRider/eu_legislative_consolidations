@@ -302,6 +302,14 @@ def element_text_without_classes(tag: Tag, classes_to_remove: set[str]) -> str:
 
 
 def extract_footnotes_map(soup: BeautifulSoup) -> dict[str, str]:
+    def normalise_footnote_body(text: str) -> str:
+        # EUR-Lex note text can contain spacing artefacts like "p. 1 ." or
+        # "p. 64 ).". Remove spaces after a number when punctuation follows.
+        text = re.sub(r"(?<=\d)\s+([\)\]\.,;:!?])", r"\1", text)
+        # Also normalise bracketed OJ references: "( OJ ..." -> "(OJ ...".
+        text = re.sub(r"\(\s+(?=OJ\b)", "(", text)
+        return text
+
     notes: dict[str, str] = {}
     for fallback, note in enumerate(soup.select("p.oj-note"), start=1):
         marker = note.select_one(".oj-note-tag")
@@ -317,7 +325,8 @@ def extract_footnotes_map(soup: BeautifulSoup) -> dict[str, str]:
                 number, body = m.groups()
             else:
                 number, body = str(fallback), whole
-        notes[number] = apply_nbsp_rules(body.strip())
+        body = apply_nbsp_rules(body.strip())
+        notes[number] = normalise_footnote_body(body)
     return notes
 
 
@@ -485,6 +494,43 @@ def add_citations(doc: Document, soup: BeautifulSoup) -> None:
                 add_para(doc, text_with_footnote_tokens(p), left_cm=0)
         else:
             add_para(doc, text_with_footnote_tokens(cit), left_cm=0)
+
+
+def add_pre_recital_bridge(doc: Document, soup: BeautifulSoup) -> None:
+    """Emit plain pre-recital lines (e.g. 'Whereas:') that sit between
+    the last citation container and the first recital container."""
+    first_recital = soup.find(id=re.compile(r"^rct_\d+$"))
+    if not first_recital:
+        return
+
+    collected: list[str] = []
+    for sib in first_recital.previous_siblings:
+        if not isinstance(sib, Tag):
+            continue
+
+        sid = str(sib.get("id", ""))
+        if re.match(r"^cit_\d+$", sid):
+            break
+
+        # Skip other structural containers; we only want free-standing bridge text.
+        if sid and STRUCTURAL_ID_RE.match(sid):
+            continue
+
+        paras = provision_paragraphs(sib, classes=("oj-normal",))
+        if paras:
+            texts = [text_with_footnote_tokens(p) for p in paras]
+        elif "oj-normal" in tag_classes(sib) or sib.name in {"p", "div"}:
+            texts = [text_with_footnote_tokens(sib)]
+        else:
+            texts = []
+
+        for txt in texts:
+            txt = clean_text(txt)
+            if txt:
+                collected.append(txt)
+
+    for txt in reversed(collected):
+        add_para(doc, txt, left_cm=0)
 
 
 def add_recitals(doc: Document, soup: BeautifulSoup) -> None:
@@ -1063,6 +1109,7 @@ def build_document(html_path: str | Path, output_path: str | Path) -> Path:
         add_title(doc, clean_text(title.get_text(" ", strip=True)))
     add_enacting_entities(doc, soup)
     add_citations(doc, soup)
+    add_pre_recital_bridge(doc, soup)
     add_recitals(doc, soup)
     add_adoption_formula(doc, soup)
     add_operatives(doc, soup)
