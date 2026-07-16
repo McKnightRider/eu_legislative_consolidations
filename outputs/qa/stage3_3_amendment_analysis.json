@@ -1,0 +1,2285 @@
+{
+  "created_at_utc": "2026-07-16T12:36:29.130331+00:00",
+  "base_docx": "/home/swm35/eu_legislative_consolidations/outputs/stage3_2.docx",
+  "amending_html": "/home/swm35/eu_legislative_consolidations/inputs/260706_EUPR_ThirdAmendment.html",
+  "amendment_number": 2,
+  "output_docx": "/home/swm35/eu_legislative_consolidations/outputs/stage3_3.docx",
+  "analysis_docx": "outputs/qa/stage3_3_amendment_analysis.docx",
+  "color": "blue",
+  "amending_title": "REGULATION (EU) 2021/337 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 16 February 2021 amending Regulation (EU) 2017/1129 as regards the EU Recovery prospectus and targeted adjustments for financial intermediaries and Directive 2004/109/EC as regards the use of the single electronic reporting format for annual financial reports, to support the recovery from the COVID-19 crisis (Text with EEA relevance)",
+  "recitals_inserted": 19,
+  "items_detected": 50,
+  "items_analyzed": 50,
+  "items_applied_by_replacement": 4,
+  "items_inserted_as_new": 41,
+  "analysis": [
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(l)\tfrom 18 March 2021 to 31 December 2022, non-equity securities issued in a continuous or repeated manner by a credit institution, where the total aggregated consideration in the Union for the securities offered is less than EUR 150 000 000 per credit institution calculated over a period of 12 months, provided that those securities:",
+      "source_instruction": "in Article 1(4), the following point is added:",
+      "target_article_number": "1",
+      "target_paragraph_number": "4",
+      "target_point_marker": "l",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 223,
+      "best_match_score": 0.928685,
+      "best_match_text": "(j) non-equity securities issued in a continuous or repeated manner by a credit institution, where the total aggregated consideration in the Union for the securities offered is less than EUR 75 000 000 per credit institution calculated over a period of 12 months, provided that those securities:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 2,
+        "replaced_to_words": 10
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(i)\tare not subordinated, convertible or exchangeable; and",
+      "source_instruction": "in Article 1(4), the following point is added:",
+      "target_article_number": "1",
+      "target_paragraph_number": "4",
+      "target_point_marker": "i",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 224,
+      "best_match_score": 0.982759,
+      "best_match_text": "(i) are not subordinated, convertible or exchangeable; and",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(ii)\tdo not give a right to subscribe for or acquire other types of securities and are not linked to a derivative instrument.",
+      "source_instruction": "in Article 1(4), the following point is added:",
+      "target_article_number": "1",
+      "target_paragraph_number": "4",
+      "target_point_marker": "ii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": -1,
+      "best_match_score": 0.992,
+      "best_match_text": "(ii) do not give a right to subscribe for or acquire other types of securities and are not linked to a derivative instrument.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(k)\tfrom 18 March 2021 to 31 December 2022, non-equity securities issued in a continuous or repeated manner by a credit institution, where the total aggregated consideration in the Union for the securities offered is less than EUR 150 000 000 per credit institution calculated over a period of 12 months, provided that those securities:",
+      "source_instruction": "in Article 1(5), first subparagraph, the following point is added:",
+      "target_article_number": "1",
+      "target_paragraph_number": "5",
+      "target_point_marker": "k",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 223,
+      "best_match_score": 0.928685,
+      "best_match_text": "(j) non-equity securities issued in a continuous or repeated manner by a credit institution, where the total aggregated consideration in the Union for the securities offered is less than EUR 75 000 000 per credit institution calculated over a period of 12 months, provided that those securities:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 2,
+        "replaced_to_words": 10
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(i)\tare not subordinated, convertible or exchangeable; and",
+      "source_instruction": "in Article 1(5), first subparagraph, the following point is added:",
+      "target_article_number": "1",
+      "target_paragraph_number": "5",
+      "target_point_marker": "i",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 224,
+      "best_match_score": 0.982759,
+      "best_match_text": "(i) are not subordinated, convertible or exchangeable; and",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(ii)\tdo not give a right to subscribe for or acquire other types of securities and are not linked to a derivative instrument.",
+      "source_instruction": "in Article 1(5), first subparagraph, the following point is added:",
+      "target_article_number": "1",
+      "target_paragraph_number": "5",
+      "target_point_marker": "ii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 225,
+      "best_match_score": 0.992,
+      "best_match_text": "(ii) do not give a right to subscribe for or acquire other types of securities and are not linked to a derivative instrument.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "1.\tWithout prejudice to Articles 14(2), 14a(2) and 18(1), a prospectus shall contain the necessary information which is material to an investor for making an informed assessment of:",
+      "source_instruction": "in Article 6(1), the introductory part of the first subparagraph is replaced by the following:",
+      "target_article_number": "6",
+      "target_paragraph_number": "1",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": -1,
+      "best_match_score": 0.947368,
+      "best_match_text": "1. Without prejudice to Article 14(2) and Article 18(1), a prospectus shall contain the necessary information which is material to an investor for making an informed assessment of:",
+      "applied_mode": "replaced",
+      "diff": {
+        "inserted_words": 2,
+        "deleted_words": 1,
+        "replaced_from_words": 1,
+        "replaced_to_words": 1
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "12a.\tBy way of derogation from paragraphs 3 to 12 of this Article, an EU Recovery prospectus drawn up in accordance with Article 14a shall include a summary drawn up in accordance with this paragraph.",
+      "source_instruction": "in Article 7, the following paragraph is inserted:",
+      "target_article_number": "7",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 504,
+      "best_match_score": 0.224939,
+      "best_match_text": "2. By way of derogation from Article 6(1), and without prejudice to Article 18(1), the simplified prospectus shall contain the relevant reduced information which is necessary to enable investors to understand:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 6,
+        "deleted_words": 0,
+        "replaced_from_words": 25,
+        "replaced_to_words": 21
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "The summary of an EU Recovery prospectus shall be drawn up as a short document written in a concise manner and of a maximum length of two sides of A4-sized paper when printed.",
+      "source_instruction": "in Article 7, the following paragraph is inserted:",
+      "target_article_number": "7",
+      "target_paragraph_number": "12a",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 334,
+      "best_match_score": 0.828986,
+      "best_match_text": "3. The summary shall be drawn up as a short document written in a concise manner and of a maximum length of seven sides of A4-sized paper when printed. The summary shall:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 5,
+        "deleted_words": 4,
+        "replaced_from_words": 1,
+        "replaced_to_words": 1
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "The summary of an EU Recovery prospectus shall not contain cross-references to other parts of the prospectus or incorporate information by reference and shall:",
+      "source_instruction": "in Article 7, the following paragraph is inserted:",
+      "target_article_number": "7",
+      "target_paragraph_number": "12a",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 394,
+      "best_match_score": 0.840989,
+      "best_match_text": "11. The summary shall not contain cross-references to other parts of the prospectus or incorporate information by reference.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 7,
+        "deleted_words": 1,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "be presented and laid out in a way that is easy to read, using characters of readable size;",
+      "source_instruction": "in Article 7, the following paragraph is inserted:",
+      "target_article_number": "7",
+      "target_paragraph_number": "12a",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 335,
+      "best_match_score": 0.978495,
+      "best_match_text": "(a) be presented and laid out in a way that is easy to read, using characters of readable size;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "be written in a language and a style that facilitate the understanding of the information, in particular, in language that is clear, non-technical, concise and comprehensible for investors;",
+      "source_instruction": "in Article 7, the following paragraph is inserted:",
+      "target_article_number": "7",
+      "target_paragraph_number": "12a",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 336,
+      "best_match_score": 0.984293,
+      "best_match_text": "(b) be written in a language and a style that facilitate the understanding of the information, in particular, in language that is clear, non-technical, concise and comprehensible for investors.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "be made up of the following four sections:",
+      "source_instruction": "in Article 7, the following paragraph is inserted:",
+      "target_article_number": "7",
+      "target_paragraph_number": "12a",
+      "target_point_marker": "c",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 337,
+      "best_match_score": 0.8,
+      "best_match_text": "4. The summary shall be made up of the following four sections:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 4,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "an introduction, containing all of the information referred to in paragraph 5 of this Article, including warnings and the date of approval of the EU Recovery prospectus;",
+      "source_instruction": "in Article 7, the following paragraph is inserted:",
+      "target_article_number": "7",
+      "target_paragraph_number": "12a",
+      "target_point_marker": "i",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 846,
+      "best_match_score": 0.455696,
+      "best_match_text": "2. The mechanisms referred to in paragraph 1 shall include at least:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 7,
+        "replaced_to_words": 22
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "key information on the issuer, including, if applicable, a specific reference of not less than 200 words to the business and financial impact on the issuer of the COVID-19 pandemic;",
+      "source_instruction": "in Article 7, the following paragraph is inserted:",
+      "target_article_number": "7",
+      "target_paragraph_number": "12a",
+      "target_point_marker": "ii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 505,
+      "best_match_score": 0.463542,
+      "best_match_text": "(a) the prospects of the issuer and the significant changes in the business and the financial position of the issuer and the guarantor that have occurred since the end of the last financial year, if any;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 3,
+        "deleted_words": 0,
+        "replaced_from_words": 28,
+        "replaced_to_words": 19
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "key information on the shares, including the rights attached to those shares and any limitations on those rights;",
+      "source_instruction": "in Article 7, the following paragraph is inserted:",
+      "target_article_number": "7",
+      "target_paragraph_number": "12a",
+      "target_point_marker": "iii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 1042,
+      "best_match_score": 0.558491,
+      "best_match_text": "E. A description of any rights attached to the securities, including any limitations of those rights, and the procedure for the exercise of those rights",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 9,
+        "replaced_from_words": 9,
+        "replaced_to_words": 11
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "key information on the offer of shares to the public and/or the admission to trading on a regulated market.",
+      "source_instruction": "in Article 7, the following paragraph is inserted:",
+      "target_article_number": "7",
+      "target_paragraph_number": "12a",
+      "target_point_marker": "iv",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 341,
+      "best_match_score": 0.945946,
+      "best_match_text": "(d) key information on the offer of securities to the public and/or the admission to trading on a regulated market.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 1,
+        "replaced_to_words": 1
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "1.\tThe following persons may choose to draw up an EU Recovery prospectus under the simplified disclosure regime set out in this Article in the case of an offer of shares to the public or of an admission to trading of shares on a regulated market:",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 498,
+      "best_match_score": 0.50501,
+      "best_match_text": "1. The following persons may choose to draw up a simplified prospectus under the simplified disclosure regime for secondary issuances, in the case of an offer of securities to the public or of an admission to trading of securities on a regulated market:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 7,
+        "replaced_to_words": 10
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "issuers whose shares have been admitted to trading on a regulated market continuously for at least the last 18 months and who issue shares fungible with existing shares which have been previously issued;",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": "1",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 499,
+      "best_match_score": 0.591928,
+      "best_match_text": "(a) issuers whose securities have been admitted to trading on a regulated market or an SME growth market continuously for at least the last 18 months and who issue securities fungible with existing securities which have been previously issued;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 6,
+        "replaced_from_words": 3,
+        "replaced_to_words": 3
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "issuers whose shares have already been traded on an SME growth market continuously for at least the last 18 months, provided that a prospectus has been published for the offer of those shares, and who issue shares fungible with existing shares which have been previously issued;",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": "1",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 499,
+      "best_match_score": 0.483685,
+      "best_match_text": "(a) issuers whose securities have been admitted to trading on a regulated market or an SME growth market continuously for at least the last 18 months and who issue securities fungible with existing securities which have been previously issued;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 14,
+        "deleted_words": 5,
+        "replaced_from_words": 6,
+        "replaced_to_words": 4
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "offerors of shares admitted to trading on a regulated market or an SME growth market continuously for at least the last 18 months.",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": "1",
+      "target_point_marker": "c",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 501,
+      "best_match_score": 0.955224,
+      "best_match_text": "(c) offerors of securities admitted to trading on a regulated market or an SME growth market continuously for at least the last 18 months.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 1,
+        "replaced_to_words": 1
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "Issuers may only draw up an EU Recovery prospectus provided that the number of shares intended to be offered represents, together with the number of shares already offered via an EU Recovery prospectus over a period of 12 months, if any, no more than 150 % of the number of shares already admitted to trading on a regulated market or an SME growth market, as the case may be, on the date of approval of the EU Recovery prospectus.",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": "1",
+      "target_point_marker": "c",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 257,
+      "best_match_score": 0.196213,
+      "best_match_text": "(b) the equity securities of the entities subject to the division have already been admitted to trading on a regulated market prior to the transaction.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 12,
+        "replaced_to_words": 66
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "The period of 12 months referred to in the second subparagraph shall begin on the date of approval of the EU Recovery prospectus.",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": "1",
+      "target_point_marker": "c",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 451,
+      "best_match_score": 0.522167,
+      "best_match_text": "In the cases referred to in the first and second subparagraph, the issuer:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 3,
+        "deleted_words": 3,
+        "replaced_from_words": 2,
+        "replaced_to_words": 12
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "2.\tBy way of derogation from Article 6(1), and without prejudice to Article 18(1), the EU Recovery prospectus shall contain the relevant reduced information which is necessary to enable investors to understand:",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 504,
+      "best_match_score": 0.520286,
+      "best_match_text": "2. By way of derogation from Article 6(1), and without prejudice to Article 18(1), the simplified prospectus shall contain the relevant reduced information which is necessary to enable investors to understand:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 1,
+        "replaced_to_words": 2
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "the prospects and financial performance of the issuer and the significant changes in the financial and business position of the issuer that have occurred since the end of the last financial year, if any, as well as its financial and non-financial long-term business strategy and objectives, including, if applicable, a specific reference of not less than 400 words to the business and financial impact of the COVID-19 pandemic on the issuer and the anticipated future impact of the same;",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": "2",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 505,
+      "best_match_score": 0.191304,
+      "best_match_text": "(a) the prospects of the issuer and the significant changes in the business and the financial position of the issuer and the guarantor that have occurred since the end of the last financial year, if any;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 50,
+        "deleted_words": 7,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "the essential information on the shares, including the rights attached to those shares and any limitations on those rights, the reasons for the issuance and its impact on the issuer, including on the overall capital structure of the issuer, as well as a disclosure of capitalisation and indebtedness, a working capital statement, and the use of proceeds.",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": "2",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 507,
+      "best_match_score": 0.151329,
+      "best_match_text": "(c) the reasons for the issuance and its impact on the issuer, including on its overall capital structure, and the use of the proceeds.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 16,
+        "deleted_words": 1,
+        "replaced_from_words": 2,
+        "replaced_to_words": 20
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "3.\tThe information contained in the EU Recovery prospectus shall be written and presented in an easily analysable, concise and comprehensible form and shall enable investors, especially retail investors, to make an informed investment decision, taking into account the regulated information that has already been disclosed to the public pursuant to Directive 2004/109/EC, where applicable, Regulation (EU) No 596/2014 and, where applicable, information referred to in Commission Delegated Regulation (EU) 2017/565[[FN:1]].",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 508,
+      "best_match_score": 0.431691,
+      "best_match_text": "The information contained in the simplified prospectus shall be written and presented in an easily analysable, concise and comprehensible form and shall enable investors to make an informed investment decision. It shall also take into account the regulated information that has already been disclosed to the public pursuant to Directive 2004/109/EC, where applicable, and Regulation (EU) No 596/2014. Those issuers referred to in point (d) of the first subparagraph of paragraph 1 of this Article that are required to prepare consolidated accounts in line with Directive 2013/34/EU of the European Parliament and of the Council after their securities\u2019 admission to trading on a regulated market shall compile the most recent financial information pursuant to point (a) of the second subparagraph of paragraph 3 of this Article, containing comparative information for the previous year included in the simplified prospectus, in accordance with the International Financial Reporting Standards referred to in Regulation (EC) No 1606/2002 of the European Parliament and of the Council.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 4,
+        "deleted_words": 93,
+        "replaced_from_words": 15,
+        "replaced_to_words": 14
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "4.\tThe EU Recovery prospectus shall be drawn up as a single document containing the minimum information set out in Annex Va. It shall be of a maximum length of 30 sides of A4-sized paper when printed and shall be presented and laid out in a way that is easy to read, using characters of readable size.",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 335,
+      "best_match_score": 0.318182,
+      "best_match_text": "(a) be presented and laid out in a way that is easy to read, using characters of readable size;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 38,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "5.\tNeither the summary nor the information incorporated by reference in accordance with Article 19 shall be taken into account as regards the maximum length referred to in paragraph 4 of this Article.",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 436,
+      "best_match_score": 0.266667,
+      "best_match_text": "6. Information may be incorporated by reference into a universal registration document under the conditions set out in Article 19.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 20,
+        "deleted_words": 12,
+        "replaced_from_words": 1,
+        "replaced_to_words": 6
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "6.\tIssuers may decide the order in which the information set out in Annex Va is set out in the EU Recovery prospectus.",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "14",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 302,
+      "best_match_score": 0.459016,
+      "best_match_text": "2. Without prejudice to Article 4, a Member State may decide to exempt offers of securities to the public from the obligation to publish a prospectus set out in paragraph 1 provided that:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 6,
+        "replaced_from_words": 20,
+        "replaced_to_words": 16
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "6a.\tBy way of derogation from paragraphs 2 and 4, the time limits set out in the first subparagraph of paragraph 2 and paragraph 4 shall be reduced to seven working days for an EU Recovery prospectus. The issuer shall inform the competent authority at least five working days before the date envisaged for the submission of an application for approval.",
+      "source_instruction": "in Article 20, the following paragraph is inserted:",
+      "target_article_number": "20",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 597,
+      "best_match_score": 0.387685,
+      "best_match_text": "6. By way of derogation from paragraphs 2 and 4, the time limits set out in the first subparagraph of paragraph 2 and paragraph 4 shall be reduced to five working days for a prospectus consisting of separate documents drawn up by frequent issuers referred to in Article 9(11), including frequent issuers using the notification procedure provided for in Article 26. The frequent issuer shall inform the competent authority at least five working days before the date envisaged for the submission of an application for approval.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 28,
+        "replaced_from_words": 3,
+        "replaced_to_words": 5
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "5a.\tAn EU Recovery prospectus shall be classified in the storage mechanism referred to in paragraph 6 of this Article. The data used for the classification of prospectuses drawn up in accordance with Article 14 may be used for the classification of EU Recovery prospectuses drawn up in accordance with Article 14a, provided that the two types of prospectuses are differentiated in that storage mechanism.",
+      "source_instruction": "in Article 21, the following paragraph is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 846,
+      "best_match_score": 0.165254,
+      "best_match_text": "2. The mechanisms referred to in paragraph 1 shall include at least:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 7,
+        "replaced_to_words": 60
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "2a.\tBy way of derogation from paragraph 2, from 18 March 2021 to 31 December 2022, where the prospectus relates to an offer of securities to the public, investors who have already agreed to purchase or subscribe for the securities before the supplement is published shall have the right, exercisable within three working days after the publication of the supplement, to withdraw their acceptances, provided that the significant new factor, material mistake or material inaccuracy referred to in paragraph 1 arose or was noted before the closing of the offer period or the delivery of the securities, whichever occurs first. That period may be extended by the issuer or the offeror. The final date of the right of withdrawal shall be stated in the supplement.",
+      "source_instruction": "the following paragraph is inserted:",
+      "target_article_number": "23",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 655,
+      "best_match_score": 0.843794,
+      "best_match_text": "2. Where the prospectus relates to an offer of securities to the public, investors who have already agreed to purchase or subscribe for the securities before the supplement is published shall have the right, exercisable within two working days after the publication of the supplement, to withdraw their acceptances, provided that the significant new factor, material mistake or material inaccuracy referred to in paragraph 1 arose or was noted before the closing of the offer period or the delivery of the securities, whichever occurs first. That period may be extended by the issuer or the offeror. The final date of the right of withdrawal shall be stated in the supplement.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 15,
+        "deleted_words": 0,
+        "replaced_from_words": 1,
+        "replaced_to_words": 1
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "The supplement shall contain a prominent statement concerning the right of withdrawal, which clearly states:",
+      "source_instruction": "the following paragraph is inserted:",
+      "target_article_number": "23",
+      "target_paragraph_number": "2a",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 656,
+      "best_match_score": 1.0,
+      "best_match_text": "The supplement shall contain a prominent statement concerning the right of withdrawal, which clearly states:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "that a right of withdrawal is only granted to those investors who had already agreed to purchase or subscribe for the securities before the supplement was published and where the securities had not yet been delivered to the investors at the time when the significant new factor, material mistake or material inaccuracy arose or was noted;",
+      "source_instruction": "the following paragraph is inserted:",
+      "target_article_number": "23",
+      "target_paragraph_number": "2a",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 657,
+      "best_match_score": 0.994118,
+      "best_match_text": "(a) that a right of withdrawal is only granted to those investors who had already agreed to purchase or subscribe for the securities before the supplement was published and where the securities had not yet been delivered to the investors at the time when the significant new factor, material mistake or material inaccuracy arose or was noted;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "the period in which investors can exercise their right of withdrawal; and",
+      "source_instruction": "the following paragraph is inserted:",
+      "target_article_number": "23",
+      "target_paragraph_number": "2a",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 658,
+      "best_match_score": 0.973333,
+      "best_match_text": "(b) the period in which investors can exercise their right of withdrawal; and",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "whom investors may contact should they wish to exercise the right of withdrawal.",
+      "source_instruction": "the following paragraph is inserted:",
+      "target_article_number": "23",
+      "target_paragraph_number": "2a",
+      "target_point_marker": "c",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 659,
+      "best_match_score": 0.97561,
+      "best_match_text": "(c) whom investors may contact should they wish to exercise the right of withdrawal.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "3a.\tBy way of derogation from paragraph 3, from 18 March 2021 to 31 December 2022, where investors purchase or subscribe securities through a financial intermediary between the time when the prospectus for those securities is approved and the closing of the initial offer period, that financial intermediary shall inform those investors of the possibility of a supplement being published, where and when it would be published and that the financial intermediary would assist them in exercising their right to withdraw acceptances in such a case.",
+      "source_instruction": "the following paragraph is inserted:",
+      "target_article_number": "23",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 660,
+      "best_match_score": 0.495495,
+      "best_match_text": "3. Where the securities are purchased or subscribed through a financial intermediary, that financial intermediary shall inform investors of the possibility of a supplement being published, where and when it would be published and that the financial intermediary would assist them in exercising their right to withdraw acceptances in such case.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 36,
+        "deleted_words": 4,
+        "replaced_from_words": 1,
+        "replaced_to_words": 4
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "Where the investors referred to in the first subparagraph of this paragraph have the right of withdrawal referred to in paragraph 2a, the financial intermediary shall contact those investors by the end of the first working day following that on which the supplement is published.",
+      "source_instruction": "the following paragraph is inserted:",
+      "target_article_number": "23",
+      "target_paragraph_number": "3a",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 583,
+      "best_match_score": 0.251546,
+      "best_match_text": "Power is delegated to the Commission to adopt the regulatory technical standards referred to in the first subparagraph of this paragraph in accordance with Articles 10 to 14 of Regulation (EU) No 1095/2010.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 7,
+        "deleted_words": 0,
+        "replaced_from_words": 22,
+        "replaced_to_words": 26
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "Where the securities are purchased or subscribed directly from the issuer, that issuer shall inform investors of the possibility of a supplement being published and where it would be published and that, in such a case, they could have a right to withdraw the acceptance.",
+      "source_instruction": "the following paragraph is inserted:",
+      "target_article_number": "23",
+      "target_paragraph_number": "3a",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 662,
+      "best_match_score": 0.945996,
+      "best_match_text": "Where the securities are purchased or subscribed directly from the issuer, that issuer shall inform investors of the possibility of a supplement being published and where it would be published and that in such case, they could have a right to withdraw the acceptance.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "The EU Recovery prospectus regime set out in Article 7(12a), Article 14a, Article 20(6a) and Article 21(5a) expires on 31 December 2022.",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "47",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 871,
+      "best_match_score": 0.493766,
+      "best_match_text": "2. The power to adopt delegated acts referred to in Article 1(7), Article 9(14), Article 13(1) and (2), Article 14(3), Article 15(2), Article 16(5), Article 20(11) and Article 29(3) shall be conferred on the Commission for an indeterminate period from 20 July 2017.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 2,
+        "replaced_from_words": 39,
+        "replaced_to_words": 14
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "EU Recovery prospectuses approved between 18 March 2021 and 31 December 2022 shall continue to be governed in accordance with Article 14a until the end of their validity or until 12 months have elapsed after 31 December 2022, whichever occurs first.",
+      "source_instruction": "the following Article is inserted:",
+      "target_article_number": "47",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 199,
+      "best_match_score": 0.216216,
+      "best_match_text": "(79) The European Data Protection Supervisor was consulted in accordance with Article 42(1) of Regulation (EU) 2018/1725,",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 14,
+        "replaced_to_words": 36
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "2.\tThe report shall assess, inter alia, whether the prospectus summary, the disclosure regimes set out in Articles 14, 14a and 15 and the universal registration document referred to in Article 9 remain appropriate in light of their pursued objectives. In particular, the report shall include the following:",
+      "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+      "target_article_number": "48",
+      "target_paragraph_number": "2",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 897,
+      "best_match_score": 0.988468,
+      "best_match_text": "2. The report shall assess, inter alia, whether the prospectus summary, the disclosure regimes set out in Articles 14 and 15 and the universal registration document referred to in Article 9 remain appropriate in light of their pursued objectives. In particular, the report shall include the following:",
+      "applied_mode": "replaced",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "the number of EU Growth prospectuses of persons in each of the categories referred to in points (a) to (d) of Article 15(1) and an analysis of the evolution of each such number and of the trends in the choice of trading venues by the persons entitled to use the EU Growth prospectus;",
+      "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+      "target_article_number": "48",
+      "target_paragraph_number": "2",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": -1,
+      "best_match_score": 0.984348,
+      "best_match_text": "(a) the number of EU Growth prospectuses of persons in each of the four categories referred to in points (a) to (d) of Article 15(1) and an analysis of the evolution of each such number and of the trends in the choice of trading venues by the persons entitled to use the EU Growth prospectus;",
+      "applied_mode": "replaced",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "an analysis of whether the EU Growth prospectus strikes a proper balance between investor protection and the reduction of administrative burdens for the persons entitled to use it;",
+      "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+      "target_article_number": "48",
+      "target_paragraph_number": "2",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": -1,
+      "best_match_score": 0.983516,
+      "best_match_text": "(b) an analysis of whether the EU Growth prospectus strikes a proper balance between investor protection and the reduction of administrative burdens for the persons entitled to use it.",
+      "applied_mode": "replaced",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "the number of EU Recovery prospectuses approved and an analysis of the evolution of such number, as well as an estimate of the actual additional market capitalisation mobilised by EU Recovery prospectuses at the date of issue in order to gather experience about the EU Recovery prospectus for post-evaluation;",
+      "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+      "target_article_number": "48",
+      "target_paragraph_number": "2",
+      "target_point_marker": "c",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 793,
+      "best_match_score": 0.071066,
+      "best_match_text": "(d) appoint auditors or experts to carry out the on-site inspection or investigation;",
+      "applied_mode": "analysis_only",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 11,
+        "replaced_to_words": 47
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "the cost of preparing and having an EU Recovery prospectus approved compared to the current costs for the preparation and approval of a standard prospectus, a secondary issuance prospectus and an EU Growth prospectus, together with an indication of the overall financial savings achieved and of which costs could be further reduced, and the total costs of complying with this Regulation for issuers, offerors and financial intermediaries together with a calculation of those costs as a percentage of operational costs;",
+      "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+      "target_article_number": "48",
+      "target_paragraph_number": "2",
+      "target_point_marker": "d",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 612,
+      "best_match_score": 0.1024,
+      "best_match_text": "(b) the website of the financial intermediaries placing or selling the securities, including paying agents;",
+      "applied_mode": "analysis_only",
+      "diff": {
+        "inserted_words": 25,
+        "deleted_words": 1,
+        "replaced_from_words": 9,
+        "replaced_to_words": 50
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "an analysis of whether the EU Recovery prospectus strikes the proper balance between investor protection and the reduction of administrative burden for the persons entitled to use it, and of the accessibility of essential information for investments;",
+      "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+      "target_article_number": "48",
+      "target_paragraph_number": "2",
+      "target_point_marker": "e",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 899,
+      "best_match_score": 0.447005,
+      "best_match_text": "(b) an analysis of whether the EU Growth prospectus strikes a proper balance between investor protection and the reduction of administrative burdens for the persons entitled to use it.",
+      "applied_mode": "analysis_only",
+      "diff": {
+        "inserted_words": 9,
+        "deleted_words": 1,
+        "replaced_from_words": 3,
+        "replaced_to_words": 3
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "an analysis of whether it would be appropriate to extend the duration of the EU Recovery prospectus regime, including whether the threshold referred to in the second subparagraph of Article 14a(1), beyond which an EU Recovery prospectus may not be used, is appropriate;",
+      "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+      "target_article_number": "48",
+      "target_paragraph_number": "2",
+      "target_point_marker": "f",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 469,
+      "best_match_score": 0.178571,
+      "best_match_text": "However, Member States shall ensure that no civil liability shall attach to any person solely on the basis of the summary pursuant to Article 7 or the specific summary of an EU Growth prospectus pursuant to the second subparagraph of Article 15(1), including any translation thereof, unless:",
+      "applied_mode": "analysis_only",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 37,
+        "replaced_to_words": 33
+      }
+    },
+    {
+      "article_number": "1",
+      "article_heading": "Article 1 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "an analysis of whether the measures laid down in Articles 23(2a) and 23(3a) achieved the objective of providing additional clarity and flexibility to both financial intermediaries and investors and whether it would be appropriate to make those measures permanent.",
+      "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+      "target_article_number": "48",
+      "target_paragraph_number": "2",
+      "target_point_marker": "g",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 49,
+      "best_match_score": 0.097674,
+      "best_match_text": "(38) In order to enhance the flexibility and cost-effectiveness of the base prospectus, an issuer should be allowed to draw up a base prospectus as separate documents.",
+      "applied_mode": "analysis_only",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 22,
+        "replaced_to_words": 36
+      }
+    }
+  ],
+  "note": "Two-phase amendment application: identified relevant provisions are applied. Replacements are attempted first; unresolved replacement instructions are left as analysis_only (never inserted) to avoid creating duplicated legal provisions. In strict doubt mode, unresolved low-confidence items are intentionally deferred as analysis_only.",
+  "operation_proof": {
+    "summary": {
+      "operations_total": 50,
+      "precondition_failures": 0,
+      "unresolved_operations": 5,
+      "all_operations_proven": false
+    },
+    "precondition_failure_examples": [],
+    "operations": [
+      {
+        "operation_id": "op_0001",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "4",
+          "point": "l",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1(4), the following point is added:",
+        "amending_text": "(l) from 18 March 2021 to 31 December 2022, non-equity securities issued in a continuous or repeated manner by a credit institution, where the total aggregated consideration in the Union for the securities offered is less than EUR 150 000 000 per credit institution calculated over a period of 12 months, provided that those securities:",
+        "best_match_score": 0.928685,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0002",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "4",
+          "point": "i",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1(4), the following point is added:",
+        "amending_text": "(i) are not subordinated, convertible or exchangeable; and",
+        "best_match_score": 0.982759,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0003",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "4",
+          "point": "ii",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1(4), the following point is added:",
+        "amending_text": "(ii) do not give a right to subscribe for or acquire other types of securities and are not linked to a derivative instrument.",
+        "best_match_score": 0.992,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0004",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "5",
+          "point": "k",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1(5), first subparagraph, the following point is added:",
+        "amending_text": "(k) from 18 March 2021 to 31 December 2022, non-equity securities issued in a continuous or repeated manner by a credit institution, where the total aggregated consideration in the Union for the securities offered is less than EUR 150 000 000 per credit institution calculated over a period of 12 months, provided that those securities:",
+        "best_match_score": 0.928685,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0005",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "5",
+          "point": "i",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1(5), first subparagraph, the following point is added:",
+        "amending_text": "(i) are not subordinated, convertible or exchangeable; and",
+        "best_match_score": 0.982759,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0006",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "5",
+          "point": "ii",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1(5), first subparagraph, the following point is added:",
+        "amending_text": "(ii) do not give a right to subscribe for or acquire other types of securities and are not linked to a derivative instrument.",
+        "best_match_score": 0.992,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0007",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "6",
+          "paragraph": "1",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 6(1), the introductory part of the first subparagraph is replaced by the following:",
+        "amending_text": "1. Without prejudice to Articles 14(2), 14a(2) and 18(1), a prospectus shall contain the necessary information which is material to an investor for making an informed assessment of:",
+        "best_match_score": 0.947368,
+        "applied_mode": "replaced",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0008",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "7",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 7, the following paragraph is inserted:",
+        "amending_text": "12a. By way of derogation from paragraphs 3 to 12 of this Article, an EU Recovery prospectus drawn up in accordance with Article 14a shall include a summary drawn up in accordance with this paragraph.",
+        "best_match_score": 0.224939,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0009",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "7",
+          "paragraph": "12a",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 7, the following paragraph is inserted:",
+        "amending_text": "The summary of an EU Recovery prospectus shall be drawn up as a short document written in a concise manner and of a maximum length of two sides of A4-sized paper when printed.",
+        "best_match_score": 0.828986,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0010",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "7",
+          "paragraph": "12a",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 7, the following paragraph is inserted:",
+        "amending_text": "The summary of an EU Recovery prospectus shall not contain cross-references to other parts of the prospectus or incorporate information by reference and shall:",
+        "best_match_score": 0.840989,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0011",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "7",
+          "paragraph": "12a",
+          "point": "a",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 7, the following paragraph is inserted:",
+        "amending_text": "be presented and laid out in a way that is easy to read, using characters of readable size;",
+        "best_match_score": 0.978495,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0012",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "7",
+          "paragraph": "12a",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 7, the following paragraph is inserted:",
+        "amending_text": "be written in a language and a style that facilitate the understanding of the information, in particular, in language that is clear, non-technical, concise and comprehensible for investors;",
+        "best_match_score": 0.984293,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0013",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "7",
+          "paragraph": "12a",
+          "point": "c",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 7, the following paragraph is inserted:",
+        "amending_text": "be made up of the following four sections:",
+        "best_match_score": 0.8,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0014",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "7",
+          "paragraph": "12a",
+          "point": "i",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 7, the following paragraph is inserted:",
+        "amending_text": "an introduction, containing all of the information referred to in paragraph 5 of this Article, including warnings and the date of approval of the EU Recovery prospectus;",
+        "best_match_score": 0.455696,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0015",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "7",
+          "paragraph": "12a",
+          "point": "ii",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 7, the following paragraph is inserted:",
+        "amending_text": "key information on the issuer, including, if applicable, a specific reference of not less than 200 words to the business and financial impact on the issuer of the COVID-19 pandemic;",
+        "best_match_score": 0.463542,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0016",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "7",
+          "paragraph": "12a",
+          "point": "iii",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 7, the following paragraph is inserted:",
+        "amending_text": "key information on the shares, including the rights attached to those shares and any limitations on those rights;",
+        "best_match_score": 0.558491,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0017",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "7",
+          "paragraph": "12a",
+          "point": "iv",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 7, the following paragraph is inserted:",
+        "amending_text": "key information on the offer of shares to the public and/or the admission to trading on a regulated market.",
+        "best_match_score": 0.945946,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0018",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "1. The following persons may choose to draw up an EU Recovery prospectus under the simplified disclosure regime set out in this Article in the case of an offer of shares to the public or of an admission to trading of shares on a regulated market:",
+        "best_match_score": 0.50501,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0019",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "1",
+          "point": "a",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "issuers whose shares have been admitted to trading on a regulated market continuously for at least the last 18 months and who issue shares fungible with existing shares which have been previously issued;",
+        "best_match_score": 0.591928,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0020",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "1",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "issuers whose shares have already been traded on an SME growth market continuously for at least the last 18 months, provided that a prospectus has been published for the offer of those shares, and who issue shares fungible with existing shares which have been previously issued;",
+        "best_match_score": 0.483685,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0021",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "1",
+          "point": "c",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "offerors of shares admitted to trading on a regulated market or an SME growth market continuously for at least the last 18 months.",
+        "best_match_score": 0.955224,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0022",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "1",
+          "point": "c",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "Issuers may only draw up an EU Recovery prospectus provided that the number of shares intended to be offered represents, together with the number of shares already offered via an EU Recovery prospectus over a period of 12 months, if any, no more than 150 % of the number of shares already admitted to trading on a regulated market or an SME growth market, as the case may be, on the date of approval of the EU Recovery prospectus.",
+        "best_match_score": 0.196213,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0023",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "1",
+          "point": "c",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "The period of 12 months referred to in the second subparagraph shall begin on the date of approval of the EU Recovery prospectus.",
+        "best_match_score": 0.522167,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0024",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "2. By way of derogation from Article 6(1), and without prejudice to Article 18(1), the EU Recovery prospectus shall contain the relevant reduced information which is necessary to enable investors to understand:",
+        "best_match_score": 0.520286,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0025",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "2",
+          "point": "a",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "the prospects and financial performance of the issuer and the significant changes in the financial and business position of the issuer that have occurred since the end of the last financial year, if any, as well as its financial and non-financial long-term business strategy and objectives, including, if applicable, a specific reference of not less than 400 words to the business and financial impact of the COVID-19 pandemic on the issuer and the anticipated future impact of the same;",
+        "best_match_score": 0.191304,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0026",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "2",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "the essential information on the shares, including the rights attached to those shares and any limitations on those rights, the reasons for the issuance and its impact on the issuer, including on the overall capital structure of the issuer, as well as a disclosure of capitalisation and indebtedness, a working capital statement, and the use of proceeds.",
+        "best_match_score": 0.151329,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0027",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "3. The information contained in the EU Recovery prospectus shall be written and presented in an easily analysable, concise and comprehensible form and shall enable investors, especially retail investors, to make an informed investment decision, taking into account the regulated information that has already been disclosed to the public pursuant to Directive 2004/109/EC, where applicable, Regulation (EU) No 596/2014 and, where applicable, information referred to in Commission Delegated Regulation (EU) 2017/565[[FN:1]].",
+        "best_match_score": 0.431691,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0028",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "4. The EU Recovery prospectus shall be drawn up as a single document containing the minimum information set out in Annex Va. It shall be of a maximum length of 30 sides of A4-sized paper when printed and shall be presented and laid out in a way that is easy to read, using characters of readable size.",
+        "best_match_score": 0.318182,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0029",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "5. Neither the summary nor the information incorporated by reference in accordance with Article 19 shall be taken into account as regards the maximum length referred to in paragraph 4 of this Article.",
+        "best_match_score": 0.266667,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0030",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "6. Issuers may decide the order in which the information set out in Annex Va is set out in the EU Recovery prospectus.",
+        "best_match_score": 0.459016,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0031",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "20",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 20, the following paragraph is inserted:",
+        "amending_text": "6a. By way of derogation from paragraphs 2 and 4, the time limits set out in the first subparagraph of paragraph 2 and paragraph 4 shall be reduced to seven working days for an EU Recovery prospectus. The issuer shall inform the competent authority at least five working days before the date envisaged for the submission of an application for approval.",
+        "best_match_score": 0.387685,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0032",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 21, the following paragraph is inserted:",
+        "amending_text": "5a. An EU Recovery prospectus shall be classified in the storage mechanism referred to in paragraph 6 of this Article. The data used for the classification of prospectuses drawn up in accordance with Article 14 may be used for the classification of EU Recovery prospectuses drawn up in accordance with Article 14a, provided that the two types of prospectuses are differentiated in that storage mechanism.",
+        "best_match_score": 0.165254,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0033",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "23",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following paragraph is inserted:",
+        "amending_text": "2a. By way of derogation from paragraph 2, from 18 March 2021 to 31 December 2022, where the prospectus relates to an offer of securities to the public, investors who have already agreed to purchase or subscribe for the securities before the supplement is published shall have the right, exercisable within three working days after the publication of the supplement, to withdraw their acceptances, provided that the significant new factor, material mistake or material inaccuracy referred to in paragraph 1 arose or was noted before the closing of the offer period or the delivery of the securities, whichever occurs first. That period may be extended by the issuer or the offeror. The final date of the right of withdrawal shall be stated in the supplement.",
+        "best_match_score": 0.843794,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0034",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "23",
+          "paragraph": "2a",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following paragraph is inserted:",
+        "amending_text": "The supplement shall contain a prominent statement concerning the right of withdrawal, which clearly states:",
+        "best_match_score": 1.0,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0035",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "23",
+          "paragraph": "2a",
+          "point": "a",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following paragraph is inserted:",
+        "amending_text": "that a right of withdrawal is only granted to those investors who had already agreed to purchase or subscribe for the securities before the supplement was published and where the securities had not yet been delivered to the investors at the time when the significant new factor, material mistake or material inaccuracy arose or was noted;",
+        "best_match_score": 0.994118,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0036",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "23",
+          "paragraph": "2a",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following paragraph is inserted:",
+        "amending_text": "the period in which investors can exercise their right of withdrawal; and",
+        "best_match_score": 0.973333,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0037",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "23",
+          "paragraph": "2a",
+          "point": "c",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following paragraph is inserted:",
+        "amending_text": "whom investors may contact should they wish to exercise the right of withdrawal.",
+        "best_match_score": 0.97561,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0038",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "23",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following paragraph is inserted:",
+        "amending_text": "3a. By way of derogation from paragraph 3, from 18 March 2021 to 31 December 2022, where investors purchase or subscribe securities through a financial intermediary between the time when the prospectus for those securities is approved and the closing of the initial offer period, that financial intermediary shall inform those investors of the possibility of a supplement being published, where and when it would be published and that the financial intermediary would assist them in exercising their right to withdraw acceptances in such a case.",
+        "best_match_score": 0.495495,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0039",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "23",
+          "paragraph": "3a",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following paragraph is inserted:",
+        "amending_text": "Where the investors referred to in the first subparagraph of this paragraph have the right of withdrawal referred to in paragraph 2a, the financial intermediary shall contact those investors by the end of the first working day following that on which the supplement is published.",
+        "best_match_score": 0.251546,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0040",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "23",
+          "paragraph": "3a",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following paragraph is inserted:",
+        "amending_text": "Where the securities are purchased or subscribed directly from the issuer, that issuer shall inform investors of the possibility of a supplement being published and where it would be published and that, in such a case, they could have a right to withdraw the acceptance.",
+        "best_match_score": 0.945996,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0041",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "47",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "The EU Recovery prospectus regime set out in Article 7(12a), Article 14a, Article 20(6a) and Article 21(5a) expires on 31 December 2022.",
+        "best_match_score": 0.493766,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0042",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "47",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following Article is inserted:",
+        "amending_text": "EU Recovery prospectuses approved between 18 March 2021 and 31 December 2022 shall continue to be governed in accordance with Article 14a until the end of their validity or until 12 months have elapsed after 31 December 2022, whichever occurs first.",
+        "best_match_score": 0.216216,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0043",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "48",
+          "paragraph": "2",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+        "amending_text": "2. The report shall assess, inter alia, whether the prospectus summary, the disclosure regimes set out in Articles 14, 14a and 15 and the universal registration document referred to in Article 9 remain appropriate in light of their pursued objectives. In particular, the report shall include the following:",
+        "best_match_score": 0.988468,
+        "applied_mode": "replaced",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0044",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "48",
+          "paragraph": "2",
+          "point": "a",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+        "amending_text": "the number of EU Growth prospectuses of persons in each of the categories referred to in points (a) to (d) of Article 15(1) and an analysis of the evolution of each such number and of the trends in the choice of trading venues by the persons entitled to use the EU Growth prospectus;",
+        "best_match_score": 0.984348,
+        "applied_mode": "replaced",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0045",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "48",
+          "paragraph": "2",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+        "amending_text": "an analysis of whether the EU Growth prospectus strikes a proper balance between investor protection and the reduction of administrative burdens for the persons entitled to use it;",
+        "best_match_score": 0.983516,
+        "applied_mode": "replaced",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0046",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "48",
+          "paragraph": "2",
+          "point": "c",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+        "amending_text": "the number of EU Recovery prospectuses approved and an analysis of the evolution of such number, as well as an estimate of the actual additional market capitalisation mobilised by EU Recovery prospectuses at the date of issue in order to gather experience about the EU Recovery prospectus for post-evaluation;",
+        "best_match_score": 0.071066,
+        "applied_mode": "analysis_only",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": false,
+        "status": "unresolved"
+      },
+      {
+        "operation_id": "op_0047",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "48",
+          "paragraph": "2",
+          "point": "d",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+        "amending_text": "the cost of preparing and having an EU Recovery prospectus approved compared to the current costs for the preparation and approval of a standard prospectus, a secondary issuance prospectus and an EU Growth prospectus, together with an indication of the overall financial savings achieved and of which costs could be further reduced, and the total costs of complying with this Regulation for issuers, offerors and financial intermediaries together with a calculation of those costs as a percentage of operational costs;",
+        "best_match_score": 0.1024,
+        "applied_mode": "analysis_only",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": false,
+        "status": "unresolved"
+      },
+      {
+        "operation_id": "op_0048",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "48",
+          "paragraph": "2",
+          "point": "e",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+        "amending_text": "an analysis of whether the EU Recovery prospectus strikes the proper balance between investor protection and the reduction of administrative burden for the persons entitled to use it, and of the accessibility of essential information for investments;",
+        "best_match_score": 0.447005,
+        "applied_mode": "analysis_only",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": false,
+        "status": "unresolved"
+      },
+      {
+        "operation_id": "op_0049",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "48",
+          "paragraph": "2",
+          "point": "f",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+        "amending_text": "an analysis of whether it would be appropriate to extend the duration of the EU Recovery prospectus regime, including whether the threshold referred to in the second subparagraph of Article 14a(1), beyond which an EU Recovery prospectus may not be used, is appropriate;",
+        "best_match_score": 0.178571,
+        "applied_mode": "analysis_only",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": false,
+        "status": "unresolved"
+      },
+      {
+        "operation_id": "op_0050",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "48",
+          "paragraph": "2",
+          "point": "g",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 48, paragraph 2 is replaced by the following:",
+        "amending_text": "an analysis of whether the measures laid down in Articles 23(2a) and 23(3a) achieved the objective of providing additional clarity and flexibility to both financial intermediaries and investors and whether it would be appropriate to make those measures permanent.",
+        "best_match_score": 0.097674,
+        "applied_mode": "analysis_only",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": false,
+        "status": "unresolved"
+      }
+    ]
+  },
+  "one_go_application_check": {
+    "passed": true,
+    "substantive_items_total": 50,
+    "substantive_items_not_fully_applied": 0,
+    "not_fully_applied_examples": []
+  }
+}

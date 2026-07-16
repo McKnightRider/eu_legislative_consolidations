@@ -1,0 +1,80 @@
+{
+  "created_at_utc": "2026-07-16T12:35:38.965473+00:00",
+  "base_docx": "/home/swm35/eu_legislative_consolidations/outputs/stage3_1.docx",
+  "amending_html": "/home/swm35/eu_legislative_consolidations/inputs/260706_EUPR_SecondAmendment.html",
+  "amendment_number": 1,
+  "output_docx": "/home/swm35/eu_legislative_consolidations/outputs/stage3_2.docx",
+  "analysis_docx": "outputs/qa/stage3_2_amendment_analysis.docx",
+  "color": "purple",
+  "amending_title": "REGULATION (EU) 2020/1503 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 7 October 2020 on European crowdfunding service providers for business, and amending Regulation (EU) 2017/1129 and Directive (EU) 2019/1937 (Text with EEA relevance)",
+  "recitals_inserted": 79,
+  "items_detected": 1,
+  "items_analyzed": 1,
+  "items_applied_by_replacement": 0,
+  "items_inserted_as_new": 1,
+  "analysis": [
+    {
+      "article_number": "46",
+      "article_heading": "Article 46 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "(k)\tan offer of securities to the public from a crowdfunding service provider authorised under Regulation (EU) 2020/1503 of the European Parliament and of the Council[[FN:3]], provided that it does not exceed the threshold laid down in point (c) of Article 1(2) of that Regulation.",
+      "source_instruction": "In Article 1(4) of Regulation (EU) 2017/1129, the following point is added:",
+      "target_article_number": "1",
+      "target_paragraph_number": "4",
+      "target_point_marker": "k",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 494,
+      "best_match_score": 0.271605,
+      "best_match_text": "(i) remuneration reports as referred to in Article 9b of Directive 2007/36/EC of the European Parliament and of the Council;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 22,
+        "deleted_words": 0,
+        "replaced_from_words": 13,
+        "replaced_to_words": 18
+      }
+    }
+  ],
+  "note": "Two-phase amendment application: identified relevant provisions are applied. Replacements are attempted first; unresolved replacement instructions are left as analysis_only (never inserted) to avoid creating duplicated legal provisions. In strict doubt mode, unresolved low-confidence items are intentionally deferred as analysis_only.",
+  "operation_proof": {
+    "summary": {
+      "operations_total": 1,
+      "precondition_failures": 0,
+      "unresolved_operations": 0,
+      "all_operations_proven": true
+    },
+    "precondition_failure_examples": [],
+    "operations": [
+      {
+        "operation_id": "op_0001",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "4",
+          "point": "k",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Article 1(4) of Regulation (EU) 2017/1129, the following point is added:",
+        "amending_text": "(k) an offer of securities to the public from a crowdfunding service provider authorised under Regulation (EU) 2020/1503 of the European Parliament and of the Council[[FN:3]], provided that it does not exceed the threshold laid down in point (c) of Article 1(2) of that Regulation.",
+        "best_match_score": 0.271605,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      }
+    ]
+  },
+  "one_go_application_check": {
+    "passed": true,
+    "substantive_items_total": 1,
+    "substantive_items_not_fully_applied": 0,
+    "not_fully_applied_examples": []
+  }
+}

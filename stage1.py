@@ -1,15 +1,15 @@
 
 """
-formatting_stage2_v6.py
+stage1.py
 
-EUR-Lex / Official Journal XHTML -> formatted Word document.
+Stage 1 pipeline: EUR-Lex / Official Journal XHTML -> formatted Word document.
 
-This version updates formatting_stage2_v2.py for the further adjustments requested:
+Formatter behaviour includes:
     - main title line breaks around "of 14 June 2017" and before "(Text with EEA relevance)";
     - CHAPTER number lines not bold;
     - Article number lines italic, not bold;
     - improved contextual indentation for numbered/lettered/roman paragraphs;
-    - Article 2 top-level definitions start at the margin;
+    - top-level definition paragraphs start at the margin;
     - continuation paragraphs after numbered paragraphs are indented by 1 cm;
     - .tit_ metadata nodes excluded from content extraction;
     - Annex headings start on a new page;
@@ -21,7 +21,8 @@ Dependencies:
     python-docx
 
 Run:
-    python formatting_stage2_v6.py L_2017168EN.01001201.xml.html Prospectus_Regulation_Stage2.docx
+    python stage1.py L_2017168EN.01001201.xml.html Prospectus_Regulation_Stage1.docx
+    # Saved as: outputs/Prospectus_Regulation_Stage1.docx
 """
 
 from __future__ import annotations
@@ -42,13 +43,18 @@ from docx.shared import Cm, Pt, RGBColor
 from lxml import etree
 from docx.oxml import OxmlElement
 
+from diagnostic_eurlex_structure import run_diagnostics
+from eurlex_parser import build_structure_summary, parse_eurlex_document, write_structure_report
+
 NBSP = "\u00A0"
 FN_TOKEN_RE = re.compile(r"\[\[FN:(\d+)\]\]")
-STRUCTURAL_ID_RE = re.compile(r"^(cit_\d+|rct_\d+|cpt_[IVXLCDM]+|art_\d+[A-Za-z]?|anx_[IVXLCDM]+)$")
+STRUCTURAL_ID_RE = re.compile(r"^(cit_\d+|rct_\d+|cpt_[A-Za-z0-9]+|art_[A-Za-z0-9]+|anx_[A-Za-z0-9]+)$")
 
 W_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 REL_NS = "http://schemas.openxmlformats.org/package/2006/relationships"
 CT_NS = "http://schemas.openxmlformats.org/package/2006/content-types"
+DEFAULT_OUTPUT_DIR = Path("outputs")
+DEFAULT_DIAGNOSTICS_DIR = DEFAULT_OUTPUT_DIR / "diagnostics"
 
 
 def clean_text(text: str | None) -> str:
@@ -203,16 +209,14 @@ def add_text_with_footnotes(paragraph, text: str, *, size=11, bold=False, italic
 # =============================================================================
 
 def split_main_title(title: str) -> list[str]:
-    """Insert title line breaks requested by Simon.
-
-    Intended result:
-        REGULATION ... COUNCIL
-        of 14 June 2017
-        on the prospectus ... Directive 2003/71/EC
-        (Text with EEA relevance)
-    """
+    """Insert title line breaks around the legal date line and EEA relevance clause."""
     title = clean_text(title)
-    title = re.sub(r"\s+(of\s+14\s+June\s+2017)\s+", r"\n\1\n", title, flags=re.I)
+    title = re.sub(
+        r"\s+(of\s+\d{1,2}\s+[A-Za-z]+\s+\d{4})\s+",
+        r"\n\1\n",
+        title,
+        flags=re.I,
+    )
     title = re.sub(r"\s+(\(Text\s+with\s+EEA\s+relevance\))", r"\n\1", title, flags=re.I)
     return [line.strip() for line in title.split("\n") if line.strip()]
 
@@ -421,15 +425,27 @@ def emit_numbered_paragraph_sequence(doc: Document, paragraphs: list[Tag], *, an
     """Emit legal-style paragraphs using HTML table-nesting depth for indentation.
 
     The EUR-Lex HTML encodes list nesting via nested <table> elements.
-    count_table_ancestors() returns 0, 1, 2 ... which maps directly to left_cm
-    for hanging-indent marker paragraphs:
-      tbl_depth=0 → left=0cm, hanging=-1cm  (digit markers)
-      tbl_depth=1 → left=1cm, hanging=-1cm  (letter items)
-      tbl_depth=2 → left=2cm, hanging=-1cm  (roman sub-items)
+        count_table_ancestors() returns 0, 1, 2 ... and we map depth to levels
+        differently for body text vs marker paragraphs.
 
+                Effective mapping (with contextual level offset):
+                        - If the sequence contains top-level numeric markers (e.g. "1.", "2."),
+                            treat those as level 1 and shift nested levels right by +1.
+                        - If not, treat table depth directly as the level basis.
+                        - body/chapeau paragraphs: left_cm = tbl_depth + level_offset
+                        - marker paragraphs: left_cm = max(tbl_depth + level_offset, 1), hanging=-1cm
+
+        This keeps top-level chapeau text at the margin (0 cm) while ensuring
+        first-level markers such as "(a)" align at 0 cm with hanging indent.
     No marker-type stack or disambiguation is needed; the HTML structure is
     authoritative and avoids (c)/(d)/(i) misclassification as roman numerals.
     """
+    has_top_level_digit = any(
+        marker_type(text_with_footnote_tokens(p)) == "digit" and count_table_ancestors(p) == 0
+        for p in paragraphs
+    )
+    level_offset = 1 if has_top_level_digit else 0
+
     i = 0
     while i < len(paragraphs):
         p_tag = paragraphs[i]
@@ -441,26 +457,25 @@ def emit_numbered_paragraph_sequence(doc: Document, paragraphs: list[Tag], *, an
         base_id = nearest_structural_id(p_tag) or "unknown"
         src_marker = f"{base_id}.{i}"
         tbl_depth = count_table_ancestors(p_tag)
-        left_cm = tbl_depth  # 0, 1, 2, ... maps directly to user indent rules
+        body_left_cm = tbl_depth + level_offset
+        marker_left_cm = max(tbl_depth + level_offset, 1)
 
         if is_standalone_marker(txt) and i + 1 < len(paragraphs):
             # Combine standalone marker + following body into one hanging paragraph
             nxt_txt = text_with_footnote_tokens(paragraphs[i + 1])
             src_body = f"{base_id}.{i + 1}"
             joined = normalise_marker_spacing(f"{txt}\t{nxt_txt}", annex_mode=annex_mode)
-            p = add_para(doc, joined, left_cm=left_cm, first_line_cm=-1, src=src_marker)
+            p = add_para(doc, joined, left_cm=marker_left_cm, first_line_cm=-1, src=src_marker)
             _append_anchor(p, src_body)
             i += 2
         elif marker_type(txt):
             # Marker already has inline body text (e.g. "1.\tThis Regulation...")
             combined = normalise_marker_spacing(txt, annex_mode=annex_mode)
-            add_para(doc, combined, left_cm=left_cm, first_line_cm=-1, src=src_marker)
+            add_para(doc, combined, left_cm=marker_left_cm, first_line_cm=-1, src=src_marker)
             i += 1
         else:
-            # Continuation / body-only text sits at the same left_cm as the
-            # enclosing marker level (tbl_depth).  tbl_depth=0 → flush left (0cm);
-            # tbl_depth=1 → 1cm (aligned with letter marker); etc.
-            add_para(doc, normalise_marker_spacing(txt, annex_mode=annex_mode), left_cm=tbl_depth, src=src_marker)
+            # Continuation / body-only text stays at its structural body level.
+            add_para(doc, normalise_marker_spacing(txt, annex_mode=annex_mode), left_cm=body_left_cm, src=src_marker)
             i += 1
 
 
@@ -615,10 +630,10 @@ def article_heading_parts(article: Tag) -> tuple[str, str | None]:
 
 def add_operatives(doc: Document, soup: BeautifulSoup) -> None:
     processed: set[str] = set()
-    for cpt in soup.find_all(id=re.compile(r"^cpt_[IVXLCDM]+$")):
+    for cpt in soup.find_all(id=re.compile(r"^cpt_[A-Za-z0-9]+$")):
         first, second = chapter_heading_parts(cpt)
         add_chapter_heading(doc, first, second)
-        for art in cpt.find_all(id=re.compile(r"^art_\d+[A-Za-z]?$")):
+        for art in cpt.find_all(id=re.compile(r"^art_[A-Za-z0-9]+$")):
             aid = str(art.get("id", ""))
             if aid in processed:
                 continue
@@ -627,7 +642,7 @@ def add_operatives(doc: Document, soup: BeautifulSoup) -> None:
             emit_numbered_paragraph_sequence(doc, provision_paragraphs(art))
             processed.add(aid)
 
-    for art in soup.find_all(id=re.compile(r"^art_\d+[A-Za-z]?$")):
+    for art in soup.find_all(id=re.compile(r"^art_[A-Za-z0-9]+$")):
         aid = str(art.get("id", ""))
         if aid in processed:
             continue
@@ -814,7 +829,7 @@ def emit_annex_structure(
             )
 
 
-def configure_annex_vi_borders(table):
+def configure_structured_table_borders(table):
 
     tbl = table._tbl
     tblPr = tbl.tblPr
@@ -855,7 +870,7 @@ def set_header_row_border(row):
 
 
 
-def build_annex_vi_table(doc: Document, annex: Tag) -> None:
+def build_structured_annex_table(doc: Document, annex: Tag) -> None:
     heading_lines = [
         clean_text(p.get_text(" ", strip=True))
         for p in annex.select("p.oj-ti-tbl")
@@ -881,7 +896,7 @@ def build_annex_vi_table(doc: Document, annex: Tag) -> None:
     table = doc.add_table(rows=0, cols=2)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.autofit = True
-    configure_annex_vi_borders(table)
+    configure_structured_table_borders(table)
     row_idx = 0
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.autofit = True
@@ -906,9 +921,16 @@ def build_annex_vi_table(doc: Document, annex: Tag) -> None:
         row_idx += 1
 
 
+def should_render_as_structured_annex_table(annex: Tag) -> bool:
+    """Detect annexes that are primarily represented as a structured table."""
+    has_tabular_title = bool(annex.select("p.oj-ti-tbl"))
+    has_html_table = bool(find_largest_html_table(annex))
+    return has_tabular_title and has_html_table
+
+
 def add_annexes(doc: Document, soup: BeautifulSoup) -> None:
 
-    for annex in soup.find_all(id=re.compile(r"^anx_[IVXLCDM]+$")):
+    for annex in soup.find_all(id=re.compile(r"^anx_[A-Za-z0-9]+$")):
 
         headings = annex.select("p.oj-doc-ti")
 
@@ -935,8 +957,8 @@ def add_annexes(doc: Document, soup: BeautifulSoup) -> None:
 
         hp.paragraph_format.page_break_before = True
 
-        if annex.get("id") == "anx_VI":
-            build_annex_vi_table(
+        if should_render_as_structured_annex_table(annex):
+            build_structured_annex_table(
                 doc,
                 annex
             )
@@ -946,6 +968,89 @@ def add_annexes(doc: Document, soup: BeautifulSoup) -> None:
             doc,
             annex
         )
+
+
+def add_final_signoff(doc: Document, soup: BeautifulSoup) -> None:
+    """Add PDF-like final sign-off layout from EUR-Lex oj-final."""
+    finals = soup.select("div.oj-final")
+    if not finals:
+        return
+
+    for final in finals:
+        normal_lines: list[str] = []
+        signatory_blocks: list[list[tuple[str, bool]]] = []
+
+        for child in final.find_all(recursive=False):
+            if not isinstance(child, Tag):
+                continue
+
+            if child.name == "p" and "oj-normal" in tag_classes(child):
+                txt = text_with_footnote_tokens(child)
+                if txt:
+                    normal_lines.append(txt)
+                continue
+
+            if child.name == "div" and "oj-signatory" in tag_classes(child):
+                block_lines: list[tuple[str, bool]] = []
+                for sign_p in child.find_all("p", class_="oj-signatory"):
+                    txt = text_with_footnote_tokens(sign_p)
+                    if txt:
+                        is_italic = bool(sign_p.select_one(".oj-italic"))
+                        block_lines.append((txt, is_italic))
+                if block_lines:
+                    signatory_blocks.append(block_lines)
+
+        if not normal_lines and not signatory_blocks:
+            continue
+
+        # Blank line above the sign-off block.
+        spacer = doc.add_paragraph()
+        set_para_spacing(spacer, before=6, after=6)
+
+        # Binding and place/date lines are indented in the PDF layout.
+        for txt in normal_lines:
+            add_para(doc, txt, left_cm=2)
+
+        # One row, two columns: Parliament on the left, Council on the right.
+        table = doc.add_table(rows=1, cols=2)
+        table.alignment = WD_TABLE_ALIGNMENT.LEFT
+        table.autofit = False
+
+        # Start table 2 cm from the text area left edge.
+        tbl = table._tbl
+        tblPr = tbl.tblPr
+        tbl_ind = OxmlElement("w:tblInd")
+        tbl_ind.set(qn("w:w"), str(int(Cm(2).emu / 635)))
+        tbl_ind.set(qn("w:type"), "dxa")
+        tblPr.append(tbl_ind)
+
+        # Keep signatory columns equal width.
+        col_width = Cm(6.5)
+        for col in table.columns:
+            col.width = col_width
+        for row in table.rows:
+            for cell in row.cells:
+                cell.width = col_width
+
+        borders = OxmlElement("w:tblBorders")
+        for edge in ("top", "left", "bottom", "right", "insideH", "insideV"):
+            e = OxmlElement(f"w:{edge}")
+            e.set(qn("w:val"), "nil")
+            borders.append(e)
+        tblPr.append(borders)
+
+        for col_idx in range(2):
+            cell = table.cell(0, col_idx)
+            cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
+            cell.text = ""
+
+            block = signatory_blocks[col_idx] if col_idx < len(signatory_blocks) else []
+            for line_idx, (txt, is_italic) in enumerate(block):
+                p = cell.paragraphs[0] if line_idx == 0 else cell.add_paragraph()
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                set_para_spacing(p, before=0, after=2)
+                r = p.add_run(txt)
+                set_run_font(r, italic=is_italic)
 
 
 # =============================================================================
@@ -1113,6 +1218,7 @@ def build_document(html_path: str | Path, output_path: str | Path) -> Path:
     add_recitals(doc, soup)
     add_adoption_formula(doc, soup)
     add_operatives(doc, soup)
+    add_final_signoff(doc, soup)
     add_annexes(doc, soup)
     output_path = Path(output_path)
     doc.save(output_path)
@@ -1120,13 +1226,57 @@ def build_document(html_path: str | Path, output_path: str | Path) -> Path:
     return output_path
 
 
+def resolve_output_path(output_arg: str | Path) -> Path:
+    output_path = Path(output_arg)
+    if output_path.parent == Path("."):
+        output_path = DEFAULT_OUTPUT_DIR / output_path.name
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    return output_path
+
+
+def default_parser_report_path(source_path: str | Path) -> Path:
+    source = Path(source_path)
+    return DEFAULT_OUTPUT_DIR / f"{source.stem}_structure_report.json"
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser(description="EUR-Lex XHTML to formatted Word with native footnotes.")
+    parser = argparse.ArgumentParser(description="Stage 1 EUR-Lex XHTML to formatted Word with native footnotes.")
     parser.add_argument("source", help="Path to EUR-Lex XHTML/HTML input file")
-    parser.add_argument("output", help="Path to output .docx file")
+    parser.add_argument(
+        "output",
+        help="Output .docx file name or path (file names are saved under outputs/ by default)",
+    )
+    parser.add_argument(
+        "--parser-report",
+        help="Optional path for parser JSON structure report (default: outputs/<source>_structure_report.json)",
+    )
+    parser.add_argument(
+        "--skip-diagnostics",
+        action="store_true",
+        help="Skip diagnostic_eurlex_structure CSV outputs (enabled by default)",
+    )
     args = parser.parse_args()
-    output = build_document(args.source, args.output)
-    print(f"Stage 2 document saved: {output}")
+
+    source = Path(args.source).expanduser().resolve()
+    output = build_document(source, resolve_output_path(args.output))
+
+    legislation = parse_eurlex_document(source)
+    parser_report = Path(args.parser_report).expanduser().resolve() if args.parser_report else default_parser_report_path(source)
+    parser_report.parent.mkdir(parents=True, exist_ok=True)
+    write_structure_report(legislation, parser_report)
+    summary = build_structure_summary(legislation)
+
+    print(f"Stage 1 document saved: {output}")
+    print(f"Parser report: {parser_report}")
+    print(
+        f"Structure summary: recitals={summary['recitals']}, articles={summary['articles']}, "
+        f"annexes={summary['annexes']}, footnotes={summary['footnotes']}"
+    )
+
+    if not args.skip_diagnostics:
+        outputs = run_diagnostics(source, DEFAULT_DIAGNOSTICS_DIR)
+        print(f"Diagnostics CSVs: {len(outputs)} files written under {DEFAULT_DIAGNOSTICS_DIR}")
+
     return 0
 
 

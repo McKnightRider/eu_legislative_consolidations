@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.~lock.*
+
+diagnostic_*.csv
+article_misindent_report.txt
+output/*.docx
+output/diagnostics/*.csv
+output/qa/*.json
+output/qa/*_amendment_analysis.json

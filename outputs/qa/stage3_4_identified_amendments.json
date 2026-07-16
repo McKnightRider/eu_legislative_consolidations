@@ -1,0 +1,431 @@
+{
+  "created_at_utc": "2026-07-16T12:37:02.622472+00:00",
+  "base_docx": "/home/swm35/eu_legislative_consolidations/outputs/stage3_3.docx",
+  "amending_html": "/home/swm35/eu_legislative_consolidations/inputs/260706_EUPR_FourthAmendment.html",
+  "target_regulation": "2017/1129",
+  "amending_title": "REGULATION (EU) 2023/2869 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 13 December 2023 amending certain Regulations as regards the establishment and functioning of the European single access point (Text with EEA relevance)",
+  "recitals": [
+    "(1)\tEasy and structured access to data, including to information provided on a voluntary basis, is important to enable decision makers in the economy and society to make sound decisions that serve the efficient functioning of the market. Such access is also necessary in order to increase opportunities for the growth and visibility of, and innovation by, small and medium-sized enterprises (SMEs). Rolling out common European data spaces in crucial sectors, including the financial sector, serves the purpose of providing easy access to reliable sources of information in those sectors. The financial sector is itself expected to undergo a digital transformation in the coming years and the Union should support that transformation, in particular by promoting data-driven finance. Furthermore, putting sustainable finance at the heart of the financial system is a key means of achieving the green transition of the Union economy. For that green transition to succeed, it is essential that information related to the sustainability and social governance of businesses is easily accessible to investors so that they are better informed when making decisions about investments. For those purposes, public access to financial, non-financial and environmental-, social- and governance-related information about natural or legal persons (\u2018entities\u2019) that are themselves required to make such information public, or that publicly disclose such information to a collection body on a voluntary basis, needs to be improved. An efficient means of doing so at Union level is to establish a centralised platform giving electronic access to all relevant information.",
+    "(2)\tIn its communication of 24 September 2020 entitled \u2018A Capital Markets Union for people and businesses - new action plan\u2019, the Commission proposed to improve public access to entities\u2019 financial and non-financial information by building a European single access point (ESAP). The communication of the Commission of 24 September 2020 entitled \u2018A digital finance strategy for the EU\u2019 set out in general terms how the Union could promote the digital transformation of finance in the coming years, in particular how to promote data-driven finance. Subsequently, in its communication of 6 July 2021 entitled \u2018Strategy for Financing the Transition to a Sustainable Economy\u2019, the Commission placed sustainable finance at the heart of the financial system, as a key means of achieving the green transition of the Union economy, as part of the European Green Deal set out in the Commission\u2019s communication of 11 December 2019.",
+    "(3)\tESAP is established in accordance with Regulation (EU) 2023/2859 of the European Parliament and of the Council[[FN:3]] in order to provide the public with easy centralised access to information about entities and their products that is of relevance to financial services, capital markets and sustainability, which authorities and entities are required to publish pursuant to Union legislative acts in those fields. Such publication should be carried out in accordance with a \u2018file once\u2019 principle and without entailing any additional disclosure requirements beyond those specified by law. In addition, any entity governed by the law of a Member State should be able to submit to a collection body, on a voluntary basis, information about its economic activities that is of relevance to financial services or capital markets, or that concerns sustainability, with a view to making that information accessible on ESAP in accordance with Regulation (EU) 2023/2859.",
+    "(4)\tA number of Regulations in the field of financial services, capital markets and sustainability should be amended in order to enable the functioning of ESAP. To achieve the sound and efficient functioning of ESAP in a proportionate manner, the scaling-up of the collection and submission of information needs to be gradual. It is intended that the requirement to make information available to ESAP constitutes an integral part of the sectoral Union legislative acts listed in the Annex to Regulation (EU) 2023/2859 and of any further Union legislative act which provides for centralised access to information on ESAP. The information to be made accessible on ESAP and the collection bodies designated for the collection of that information could be revisited as part of the review of those sectoral Union legislative acts, to ensure that ESAP provides market participants with easy centralised access to the information they need and that ESAP becomes the point of reference.",
+    "(5)\tESAP should be established with an ambitious timeframe, while taking intermediate steps to ensure its operational soundness and efficiency. In particular, sufficient time should be allocated for the technical implementation of ESAP and for the collection of information to be put in place in Member States. The development of ESAP should have an initial phase of 12 months, to grant sufficient time to Member States and the European Supervisory Authority (European Securities and Markets Authority) (ESMA) established by Regulation (EU) No 1095/2010 of the European Parliament and of the Council[[FN:4]] to establish the IT infrastructure and test it on the basis of the collection of a limited number of information flows. Subsequently, the development of ESAP should gradually incorporate, over time, an additional number of information flows and functionalities at a pace that allows for ESAP\u2019s sound and efficient development. The functioning of ESAP should be assessed on a regular basis over the course of its implementation and operation to allow for any adjustments to meet the needs of its users and to ensure its technical efficiency.",
+    "(6)\tFor the purposes of the functioning of ESAP, collection bodies should be designated to collect information from entities that is of relevance to financial services, capital markets and sustainability. In the absence of a collection body already established under Union law, Member States should retain flexibility in organising the collection of information in their jurisdiction, should designate at least one collection body, as defined in Regulation (EU) 2023/2859, to collect and store information, and should notify ESMA accordingly. For the purpose of making information accessible on ESAP in a cost-efficient manner, the collection, transmission and storage of information should be based, to the extent possible, on existing collection, transmission and storage procedures and infrastructure in place at the national level as well as those in place for the transmission of information from the collection bodies to ESMA.",
+    "(7)\tTo ensure that ESAP provides timely access to information that is of relevance to financial services, capital markets and sustainability as set out in Regulation (EU) 2023/2859, entities should submit their information to a collection body at the same time as they make that information public. In turn, the collection bodies should make the information available to ESAP in an automated manner. The collection bodies should draw, to the extent possible, upon existing information collection procedures and infrastructure, at Union and national level, for the transmission of information to ESMA without undue delay.",
+    "(8)\tIn order for the information on ESAP to be digitally usable, entities should submit to the collection bodies the information in a data extractable format or, where required by Union law, in a machine-readable format. The information submitted by entities to the collection bodies should be accompanied by the metadata requested by those collection bodies. The Commission should be empowered to adopt implementing technical standards developed by the European Supervisory Authority (European Banking Authority) (EBA) established by Regulation (EU) No 1093/2010 of the European Parliament and of the Council[[FN:5]], by the European Supervisory Authority (European Insurance and Occupational Pensions Authority) (EIOPA) established by Regulation (EU) No 1094/2010 of the European Parliament and of the Council[[FN:6]], or by ESMA (known collectively as \u2018European Supervisory Authorities\u2019 or \u2018ESAs\u2019), specifying the metadata for each piece of information, how the data in the information is to be structured, the information for which a machine-readable format is required and which machine-readable format is to be used in such cases. As regards implementing technical standards concerning sustainability information, the ESAs, acting through the Joint Committee, should liaise with EFRAG on the development of those draft standards. The introduction of a machine-readable format should be justified by an analysis that takes into account the costs and benefits for entities and for users of the information and also for any other concerned parties, in particular the collection bodies, competent authorities and ESAs.",
+    "(9)\tThe collection bodies should not be responsible for verifying the accuracy of the content of the information submitted by entities, unless mandated to do so in accordance with the applicable Union legislative acts listed in the Annex to Regulation (EU) 2023/2859. Entities that submit information on a mandatory basis should be responsible for ensuring the accuracy of the information submitted pursuant to their legal obligations under the applicable Union legislative acts listed in that Annex or under national law.",
+    "(10)\tThe European Data Protection Supervisor was consulted in accordance with Article 42(1) of Regulation (EU) 2018/1725 of the European Parliament and of the Council[[FN:7]] and delivered formal comments on 19 January 2022.",
+    "(11)\tThe European Central Bank provided its opinion on 7 June 2022[[FN:8]].",
+    "(12)\tSince the objective of this Regulation, namely, to harmonise the disclosure requirements for the public information that should be accessible through ESAP, cannot be sufficiently achieved by the Member States but can rather, by reason of its scale and effects, be better achieved at Union level, the Union may adopt measures, in accordance with the principle of subsidiarity as set out in Article 5 of the Treaty on European Union. In accordance with the principle of proportionality, as set out in that Article, this Regulation does not go beyond what is necessary in order to achieve that objective.",
+    "(13)\tThe following Regulations should therefore be amended accordingly: \u2014 Regulation (EC) No 1060/2009 of the European Parliament and of the Council[[FN:9]]; \u2014 Regulation (EU) No 236/2012 of the European Parliament and of the Council[[FN:10]]; \u2014 Regulation (EU) No 345/2013 of the European Parliament and of the Council[[FN:11]]; \u2014 Regulation (EU) No 346/2013 of the European Parliament and of the Council[[FN:12]]; \u2014 Regulation (EU) No 575/2013 of the European Parliament and of the Council[[FN:13]]; \u2014 Regulation (EU) No 537/2014 of the European Parliament and of the Council[[FN:14]]; \u2014 Regulation (EU) No 596/2014 of the European Parliament and of the Council[[FN:15]]; \u2014 Regulation (EU) No 600/2014 of the European Parliament and of the Council[[FN:16]]; \u2014 Regulation (EU) No 1286/2014 of the European Parliament and of the Council[[FN:17]]; \u2014 Regulation (EU) 2015/760 of the European Parliament and of the Council[[FN:18]]; \u2014 Regulation (EU) 2015/2365 of the European Parliament and of the Council[[FN:19]]; \u2014 Regulation (EU) 2016/1011 of the European Parliament and of the Council[[FN:20]]; \u2014 Regulation (EU) 2017/1129 of the European Parliament and of the Council[[FN:21]]; \u2014 Regulation (EU) 2017/1131 of the European Parliament and of the Council[[FN:22]]; \u2014 Regulation (EU) 2019/1238 of the European Parliament and of the Council[[FN:23]]; \u2014 Regulation (EU) 2019/2033 of the European Parliament and of the Council[[FN:24]]; \u2014 Regulation (EU) 2019/2088 of the European Parliament and of the Council[[FN:25]]; \u2014 Regulation (EU) 2023/1114 of the European Parliament and of the Council[[FN:26]]; \u2014 Regulation (EU) 2023/2631 of the European Parliament and of the Council[[FN:27]],"
+  ],
+  "entry_into_force_block": {
+    "article_heading_line": "Article 20",
+    "article_subheading_line": "Entry into force",
+    "article_body": [
+      "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union ."
+    ],
+    "final_lines": [
+      "This Regulation shall be binding in its entirety and directly applicable in all Member States.",
+      "Done at Strasbourg, 13 December 2023."
+    ],
+    "signatories": [
+      [
+        {
+          "text": "For the European Parliament",
+          "italic": true
+        },
+        {
+          "text": "The President",
+          "italic": true
+        },
+        {
+          "text": "R. METSOLA",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "text": "For the Council",
+          "italic": true
+        },
+        {
+          "text": "The President",
+          "italic": true
+        },
+        {
+          "text": "P. NAVARRO R\u00cdOS",
+          "italic": false
+        }
+      ]
+    ]
+  },
+  "detected_items": 403,
+  "relevant_items": 28,
+  "items": [
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "1.\tFrom 10 July 2026, when making public any information referred to in Article 1(4) points (f) and (g), Article 1(5) first subparagraph, points (e) and (f), Articles 8(5), 9(4), 10(2), 17(2), 21(1), 21(9) and 23(1) of this Regulation, the issuer, the offeror or the person asking for admission to trading on a regulated market, where relevant, shall submit that information at the same time to the relevant collection body referred to in paragraph 3 of this Article for the purpose of making it accessible on the European single access point (ESAP) established under Regulation (EU) 2023/2859 of the European Parliament and of the Council[[FN:13]].",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "That information shall comply with the following requirements:",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "be submitted in a data extractable format as defined in Article 2, point (3), of Regulation (EU) 2023/2859 or, where required by Union law, in a machine-readable format, as defined in Article 2, point (4), of that Regulation;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "be accompanied by the following metadata:",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "all the names of the issuer, the offeror, or the person asking for admission to trading on a regulated market, where relevant, to which the information relates;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "i",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "for legal persons, the legal entity identifier of the issuer, the offeror, or the person asking for admission to trading on a regulated market, where relevant, as specified pursuant to Article 7(4), point (b), of Regulation (EU) 2023/2859;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "ii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "for legal persons, the size of the issuer by category, as specified pursuant to Article 7(4), point (d), of that Regulation;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "iii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "the industry sector(s) of the economic activities of the issuer, as specified pursuant to Article 7(4), point (e), of that Regulation;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "iv",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "the type of information, as classified pursuant to Article 7(4), point (c), of that Regulation;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "v",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "an indication of whether the information contains personal data.",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "vi",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "2.\tFor the purposes of paragraph 1, point (b)(ii), issuers, offerors, or persons asking for admission to trading on a regulated market that are legal persons shall obtain a legal entity identifier.",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "3.\tFor the purpose of making the information referred to in paragraph 1 of this Article accessible on ESAP, the collection body as defined in Article 2, point (2), of Regulation (EU) 2023/2859 shall be the competent authority. The competent authority shall, to the extent possible, build upon the procedures and infrastructures designed and implemented in application of Article 25(6), of this Regulation.",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "4.\tFrom 10 July 2026, for the purposes of making the information referred to in Article 42(1) of this Regulation accessible on ESAP, the collection body defined in Article 2, point (2), of Regulation (EU) 2023/2859 shall be the competent authority.",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "That information shall comply with the following requirements:",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "be submitted in a data extractable format as defined in Article 2, point (3), of Regulation (EU) 2023/2859;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "be accompanied by the following metadata:",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "all the names of the issuer or, where applicable, of the offeror to which the information relates;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "i",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "where available, the legal entity identifier of the issuer or, where applicable, of the offeror, as specified pursuant to Article 7(4), point (b), of Regulation (EU) 2023/2859;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "ii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "the type of information, as classified pursuant to Article 7(4), point (c), of that Regulation;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "iii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "an indication of whether the information contains personal data.",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "iv",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "5.\tFor the purpose of ensuring the efficient collection and management of information submitted in accordance with paragraph 1, ESMA shall develop draft implementing technical standards to specify:",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "any other metadata to accompany the information;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "the structuring of data in the information;",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "for which information a machine-readable format is required and, in such cases, which machine-readable format is to be used.",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": "c",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "For the purposes of point (c), ESMA shall assess the advantages and disadvantages of different machine-readable formats and conduct appropriate field tests.",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "ESMA shall submit those draft implementing technical standards to the Commission.",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "Power is conferred on the Commission to adopt the implementing technical standards referred to in the first subparagraph of this paragraph in accordance with Article 15 of Regulation (EU) No 1095/2010.",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "text": "6.\tWhere necessary, ESMA shall adopt guidelines to ensure that the metadata submitted in accordance with paragraph 5, first subparagraph, point (a), are correct.",
+      "amendment_kind": "insertion",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "inserted_article_marker": "21a",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:"
+    }
+  ]
+}

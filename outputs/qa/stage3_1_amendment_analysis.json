@@ -1,0 +1,798 @@
+{
+  "created_at_utc": "2026-07-16T12:35:13.538873+00:00",
+  "base_docx": "/home/swm35/eu_legislative_consolidations/outputs/stage1.docx",
+  "amending_html": "/home/swm35/eu_legislative_consolidations/inputs/260706_EUPR_FirstAmendment.html",
+  "amendment_number": 1,
+  "output_docx": "/home/swm35/eu_legislative_consolidations/outputs/stage3_1.docx",
+  "analysis_docx": "outputs/qa/stage3_1_amendment_analysis.docx",
+  "color": "orange",
+  "amending_title": "REGULATION (EU) 2019/2115 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 27 November 2019 amending Directive 2014/65/EU and Regulations (EU) No 596/2014 and (EU) 2017/1129 as regards the promotion of the use of SME growth markets (Text with EEA relevance)",
+  "recitals_inserted": 20,
+  "items_detected": 17,
+  "items_analyzed": 17,
+  "items_applied_by_replacement": 4,
+  "items_inserted_as_new": 13,
+  "analysis": [
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "6a.\tThe exemptions set out in point (f) of paragraph 4 and in point (e) of paragraph 5 shall only apply to equity securities, and only in the following cases:",
+      "source_instruction": "in Article 1, the following paragraphs are inserted:",
+      "target_article_number": "1",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 247,
+      "best_match_score": 0.56917,
+      "best_match_text": "6. The section referred to in point (b) of paragraph 4 shall contain the following information:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 7,
+        "deleted_words": 0,
+        "replaced_from_words": 7,
+        "replaced_to_words": 14
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "the equity securities offered are fungible with existing securities already admitted to trading on a regulated market prior to the takeover and its related transaction, and the takeover is not considered to be a reverse acquisition transaction within the meaning of paragraph B19 of international financial reporting standard (IFRS) 3, Business Combinations, adopted by Commission Regulation (EC) No 1126/2008[[FN:3]]; or",
+      "source_instruction": "in Article 1, the following paragraphs are inserted:",
+      "target_article_number": "1",
+      "target_paragraph_number": "6a",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 696,
+      "best_match_score": 0.155752,
+      "best_match_text": "With regard to the processing of personal data by ESMA within the framework of this Regulation, it shall comply with Regulation (EC) No 45/2001.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 6,
+        "deleted_words": 0,
+        "replaced_from_words": 16,
+        "replaced_to_words": 48
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "the supervisory authority that has the competence, where applicable, to review the offer document under Directive 2004/25/EC of the European Parliament and of the Council[[FN:4]] has issued a prior approval of the document referred to in point (f) of paragraph 4 or point (e) of paragraph 5 of this Article.",
+      "source_instruction": "in Article 1, the following paragraphs are inserted:",
+      "target_article_number": "1",
+      "target_paragraph_number": "6a",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 458,
+      "best_match_score": 0.313084,
+      "best_match_text": "(f) management reports as referred to in Chapter 5 of Directive 2013/34/EU of the European Parliament and of the Council;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 27,
+        "deleted_words": 0,
+        "replaced_from_words": 12,
+        "replaced_to_words": 17
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "6b.\tThe exemptions set out in point (g) of paragraph 4 and in point (f) of paragraph 5 shall apply only to equity securities in respect of which the transaction is not considered to be a reverse acquisition transaction within the meaning of paragraph B19 of IFRS 3, Business Combinations, and only in the following cases:",
+      "source_instruction": "in Article 1, the following paragraphs are inserted:",
+      "target_article_number": "1",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 842,
+      "best_match_score": 0.155125,
+      "best_match_text": "E. Dilution (for equity securities only)",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 31,
+        "deleted_words": 0,
+        "replaced_from_words": 3,
+        "replaced_to_words": 22
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "the equity securities of the acquiring entity have already been admitted to trading on a regulated market prior to the transaction; or",
+      "source_instruction": "in Article 1, the following paragraphs are inserted:",
+      "target_article_number": "1",
+      "target_paragraph_number": "6b",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 138,
+      "best_match_score": 0.673835,
+      "best_match_text": "(i) that those securities, or securities of the same class, have been admitted to trading on that other regulated market for more than 18 months;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 0,
+        "replaced_from_words": 14,
+        "replaced_to_words": 10
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "the equity securities of the entities subject to the division have already been admitted to trading on a regulated market prior to the transaction.",
+      "source_instruction": "in Article 1, the following paragraphs are inserted:",
+      "target_article_number": "1",
+      "target_paragraph_number": "6b",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 138,
+      "best_match_score": 0.650685,
+      "best_match_text": "(i) that those securities, or securities of the same class, have been admitted to trading on that other regulated market for more than 18 months;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 0,
+        "replaced_from_words": 14,
+        "replaced_to_words": 12
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(b)\twithout prejudice to Article 1(5), issuers whose equity securities have been admitted to trading on a regulated market or an SME growth market continuously for at least the last 18 months and who issue non-equity securities or securities giving access to equity securities fungible with the existing equity securities of the issuer already admitted to trading;",
+      "source_instruction": "point (b) is replaced by the following:",
+      "target_article_number": "14",
+      "target_paragraph_number": "1",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": -1,
+      "best_match_score": 0.692998,
+      "best_match_text": "(b) issuers whose equity securities have been admitted to trading on a regulated market or an SME growth market continuously for at least the last 18 months and who issue non-equity securities;",
+      "applied_mode": "replaced",
+      "diff": {
+        "inserted_words": 26,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(d)\tissuers whose securities have been offered to the public and admitted to trading on an SME growth market continuously for at least two years, and who have fully complied with reporting and disclosure obligations throughout the period of being admitted to trading, and who seek admission to trading on a regulated market of securities fungible with existing securities which have been previously issued.",
+      "source_instruction": "the following point is added:",
+      "target_article_number": "14",
+      "target_paragraph_number": "1",
+      "target_point_marker": "d",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 32,
+      "best_match_score": 0.206997,
+      "best_match_text": "(23) Issuers, offerors or persons asking for the admission to trading on a regulated market of securities which are not subject to the obligation to publish a prospectus should benefit from the single passport where they choose to comply with this Regulation on a voluntary basis.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 28,
+        "deleted_words": 0,
+        "replaced_from_words": 33,
+        "replaced_to_words": 23
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "Those issuers referred to in point (d) of the first subparagraph of paragraph 1 of this Article that are required to prepare consolidated accounts in line with Directive 2013/34/EU of the European Parliament and of the Council[[FN:5]] after their securities\u2019 admission to trading on a regulated market shall compile the most recent financial information pursuant to point (a) of the second subparagraph of paragraph 3 of this Article, containing comparative information for the previous year included in the simplified prospectus, in accordance with the International Financial Reporting Standards referred to in Regulation (EC) No 1606/2002 of the European Parliament and of the Council[[FN:6]].",
+      "source_instruction": "in the second subparagraph, the following sentence is added:",
+      "target_article_number": "14",
+      "target_paragraph_number": "2",
+      "target_point_marker": null,
+      "best_match_index": 458,
+      "best_match_score": 0.171359,
+      "best_match_text": "(f) management reports as referred to in Chapter 5 of Directive 2013/34/EU of the European Parliament and of the Council;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 90,
+        "deleted_words": 0,
+        "replaced_from_words": 6,
+        "replaced_to_words": 4
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "Those issuers referred to in point (d) of the first subparagraph of paragraph 1 of this Article that are not required to prepare consolidated accounts in line with Directive 2013/34/EU after their securities\u2019 admission to trading on a regulated market shall compile the most recent financial information pursuant to point (a) of the second subparagraph of paragraph 3 of this Article, containing comparative information for the previous year included in the simplified prospectus, in accordance with the national law of the Member State in which the issuer is incorporated.",
+      "source_instruction": "the following subparagraphs are added:",
+      "target_article_number": "14",
+      "target_paragraph_number": "2",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 166,
+      "best_match_score": 0.139942,
+      "best_match_text": "(i) relating to a specific offer of securities to the public or to an admission to trading on a regulated market;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 75,
+        "deleted_words": 6,
+        "replaced_from_words": 5,
+        "replaced_to_words": 6
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "Third country issuers whose securities have been admitted to trading on an SME growth market shall compile the most recent financial information pursuant to point (a) of the second subparagraph of paragraph 3 of this Article, containing comparative information for the previous year included in the simplified prospectus, in accordance with their national accounting standards, provided that those standards are equivalent to Regulation (EC) No 1606/2002. If those national accounting standards are not equivalent to the International Financial Reporting Standards, the financial information shall be restated pursuant to Regulation (EC) No 1606/2002.",
+      "source_instruction": "the following subparagraphs are added:",
+      "target_article_number": "14",
+      "target_paragraph_number": "2",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 696,
+      "best_match_score": 0.093082,
+      "best_match_text": "With regard to the processing of personal data by ESMA within the framework of this Regulation, it shall comply with Regulation (EC) No 45/2001.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 19,
+        "deleted_words": 5,
+        "replaced_from_words": 10,
+        "replaced_to_words": 65
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(e)\tfor equity securities, including securities giving access to equity securities, the working capital statement, the statement of capitalisation and indebtedness, a disclosure of relevant conflicts of interest and related-party transactions, major shareholders and, where applicable, pro forma financial information.",
+      "source_instruction": "point (e) of the second subparagraph of paragraph 3 is replaced by the following:",
+      "target_article_number": "14",
+      "target_paragraph_number": "3",
+      "target_point_marker": "e",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": -1,
+      "best_match_score": 0.8981,
+      "best_match_text": "(e) for equity securities, the working capital statement, the statement of capitalisation and indebtedness, a disclosure of relevant conflicts of interest and related-party transactions, major shareholders and, where applicable, pro forma financial information.",
+      "applied_mode": "replaced",
+      "diff": {
+        "inserted_words": 7,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(ca)\tissuers, other than SMEs, offering shares to the public at the same time as seeking admission of those shares to trading on an SME growth market, provided that such issuers have no shares already admitted to trading on an SME growth market and the combined value of the following two items is less than EUR 200 000 000:",
+      "source_instruction": "in the first subparagraph of Article 15(1), the following point is inserted:",
+      "target_article_number": "15",
+      "target_paragraph_number": "1",
+      "target_point_marker": "ca",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 137,
+      "best_match_score": 0.292453,
+      "best_match_text": "(j) securities already admitted to trading on another regulated market, on the following conditions:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 6,
+        "replaced_to_words": 51
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(i)\tthe final offer price, or the maximum price in the case referred to in point (b)(i) of Article 17(1);",
+      "source_instruction": "in the first subparagraph of Article 15(1), the following point is inserted:",
+      "target_article_number": "15",
+      "target_paragraph_number": "1",
+      "target_point_marker": "i",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 774,
+      "best_match_score": 0.56,
+      "best_match_text": "(a) the types of issuers, in particular the categories of persons referred to in points (a) to (d) of Article 15(1); and",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 2,
+        "replaced_from_words": 12,
+        "replaced_to_words": 13
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "(ii)\tthe total number of shares outstanding immediately after the share offer to the public, calculated either on the basis of the amount of shares offered to the public or, in the case referred to in point (b)(i) of Article 17(1), on the basis of the maximum amount of shares offered to the public.",
+      "source_instruction": "in the first subparagraph of Article 15(1), the following point is inserted:",
+      "target_article_number": "15",
+      "target_paragraph_number": "1",
+      "target_point_marker": "ii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 580,
+      "best_match_score": 0.104019,
+      "best_match_text": "Any application of the provisions of Article 18(1) and (2) shall be stated in the certificate, as well as its justification.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 16,
+        "replaced_to_words": 50
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "Statement of capitalisation and indebtedness (only for equity securities issued by companies with market capitalisation above EUR 200 000 000) and working capital statement (only for equity securities).",
+      "source_instruction": "in Annex V, point II is replaced by the following:",
+      "target_article_number": null,
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": "V",
+      "target_annex_point_marker": "ii",
+      "best_match_index": 952,
+      "best_match_score": 0.27154,
+      "best_match_text": "II. Working capital statement and statement of capitalisation and indebtedness (only for equity securities issued by companies with market capitalisation above EUR 200 000 000).",
+      "applied_mode": "replaced",
+      "diff": {
+        "inserted_words": 8,
+        "deleted_words": 4,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "2",
+      "article_heading": "Article 2 Amendments to Regulation (EU) 2017/1129",
+      "amending_text": "The purpose is to provide information on the issuer\u2019s capitalisation and indebtedness and information as to whether the working capital is sufficient to meet the issuer\u2019s present requirements or, if not, how the issuer proposes to provide the additional working capital needed.",
+      "source_instruction": "in Annex V, point II is replaced by the following:",
+      "target_article_number": null,
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": "V",
+      "target_annex_point_marker": "ii",
+      "best_match_index": 953,
+      "best_match_score": 0.981818,
+      "best_match_text": "The purpose is to provide information on the issuer\u2019s capitalisation and indebtedness and information as to whether the working capital is sufficient for the issuer\u2019s present requirements or, if not, how the issuer proposes to provide the additional working capital needed.",
+      "applied_mode": "replaced",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 1,
+        "replaced_to_words": 2
+      }
+    }
+  ],
+  "note": "Two-phase amendment application: identified relevant provisions are applied. Replacements are attempted first; unresolved replacement instructions are left as analysis_only (never inserted) to avoid creating duplicated legal provisions. In strict doubt mode, unresolved low-confidence items are intentionally deferred as analysis_only.",
+  "operation_proof": {
+    "summary": {
+      "operations_total": 17,
+      "precondition_failures": 0,
+      "unresolved_operations": 0,
+      "all_operations_proven": true
+    },
+    "precondition_failure_examples": [],
+    "operations": [
+      {
+        "operation_id": "op_0001",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1, the following paragraphs are inserted:",
+        "amending_text": "6a. The exemptions set out in point (f) of paragraph 4 and in point (e) of paragraph 5 shall only apply to equity securities, and only in the following cases:",
+        "best_match_score": 0.56917,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0002",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "6a",
+          "point": "a",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1, the following paragraphs are inserted:",
+        "amending_text": "the equity securities offered are fungible with existing securities already admitted to trading on a regulated market prior to the takeover and its related transaction, and the takeover is not considered to be a reverse acquisition transaction within the meaning of paragraph B19 of international financial reporting standard (IFRS) 3, Business Combinations, adopted by Commission Regulation (EC) No 1126/2008[[FN:3]]; or",
+        "best_match_score": 0.155752,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0003",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "6a",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1, the following paragraphs are inserted:",
+        "amending_text": "the supervisory authority that has the competence, where applicable, to review the offer document under Directive 2004/25/EC of the European Parliament and of the Council[[FN:4]] has issued a prior approval of the document referred to in point (f) of paragraph 4 or point (e) of paragraph 5 of this Article.",
+        "best_match_score": 0.313084,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0004",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1, the following paragraphs are inserted:",
+        "amending_text": "6b. The exemptions set out in point (g) of paragraph 4 and in point (f) of paragraph 5 shall apply only to equity securities in respect of which the transaction is not considered to be a reverse acquisition transaction within the meaning of paragraph B19 of IFRS 3, Business Combinations, and only in the following cases:",
+        "best_match_score": 0.155125,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0005",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "6b",
+          "point": "a",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1, the following paragraphs are inserted:",
+        "amending_text": "the equity securities of the acquiring entity have already been admitted to trading on a regulated market prior to the transaction; or",
+        "best_match_score": 0.673835,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0006",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "1",
+          "paragraph": "6b",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in Article 1, the following paragraphs are inserted:",
+        "amending_text": "the equity securities of the entities subject to the division have already been admitted to trading on a regulated market prior to the transaction.",
+        "best_match_score": 0.650685,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0007",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "1",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "point (b) is replaced by the following:",
+        "amending_text": "(b) without prejudice to Article 1(5), issuers whose equity securities have been admitted to trading on a regulated market or an SME growth market continuously for at least the last 18 months and who issue non-equity securities or securities giving access to equity securities fungible with the existing equity securities of the issuer already admitted to trading;",
+        "best_match_score": 0.692998,
+        "applied_mode": "replaced",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0008",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "1",
+          "point": "d",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following point is added:",
+        "amending_text": "(d) issuers whose securities have been offered to the public and admitted to trading on an SME growth market continuously for at least two years, and who have fully complied with reporting and disclosure obligations throughout the period of being admitted to trading, and who seek admission to trading on a regulated market of securities fungible with existing securities which have been previously issued.",
+        "best_match_score": 0.206997,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0009",
+        "operation_type": "insert",
+        "target_path": "article/14/paragraph/2/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "2",
+          "point": "None",
+          "annex": null,
+          "annex_point": null
+        },
+        "source_instruction": "in the second subparagraph, the following sentence is added:",
+        "amending_text": "Those issuers referred to in point (d) of the first subparagraph of paragraph 1 of this Article that are required to prepare consolidated accounts in line with Directive 2013/34/EU of the European Parliament and of the Council[[FN:5]] after their securities\u2019 admission to trading on a regulated market shall compile the most recent financial information pursuant to point (a) of the second subparagraph of paragraph 3 of this Article, containing comparative information for the previous year included in the simplified prospectus, in accordance with the International Financial Reporting Standards referred to in Regulation (EC) No 1606/2002 of the European Parliament and of the Council[[FN:6]].",
+        "best_match_score": 0.171359,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0010",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "2",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following subparagraphs are added:",
+        "amending_text": "Those issuers referred to in point (d) of the first subparagraph of paragraph 1 of this Article that are not required to prepare consolidated accounts in line with Directive 2013/34/EU after their securities\u2019 admission to trading on a regulated market shall compile the most recent financial information pursuant to point (a) of the second subparagraph of paragraph 3 of this Article, containing comparative information for the previous year included in the simplified prospectus, in accordance with the national law of the Member State in which the issuer is incorporated.",
+        "best_match_score": 0.139942,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0011",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "2",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "the following subparagraphs are added:",
+        "amending_text": "Third country issuers whose securities have been admitted to trading on an SME growth market shall compile the most recent financial information pursuant to point (a) of the second subparagraph of paragraph 3 of this Article, containing comparative information for the previous year included in the simplified prospectus, in accordance with their national accounting standards, provided that those standards are equivalent to Regulation (EC) No 1606/2002. If those national accounting standards are not equivalent to the International Financial Reporting Standards, the financial information shall be restated pursuant to Regulation (EC) No 1606/2002.",
+        "best_match_score": 0.093082,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0012",
+        "operation_type": "replace",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "14",
+          "paragraph": "3",
+          "point": "e",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "point (e) of the second subparagraph of paragraph 3 is replaced by the following:",
+        "amending_text": "(e) for equity securities, including securities giving access to equity securities, the working capital statement, the statement of capitalisation and indebtedness, a disclosure of relevant conflicts of interest and related-party transactions, major shareholders and, where applicable, pro forma financial information.",
+        "best_match_score": 0.8981,
+        "applied_mode": "replaced",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0013",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "15",
+          "paragraph": "1",
+          "point": "ca",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in the first subparagraph of Article 15(1), the following point is inserted:",
+        "amending_text": "(ca) issuers, other than SMEs, offering shares to the public at the same time as seeking admission of those shares to trading on an SME growth market, provided that such issuers have no shares already admitted to trading on an SME growth market and the combined value of the following two items is less than EUR 200 000 000:",
+        "best_match_score": 0.292453,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0014",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "15",
+          "paragraph": "1",
+          "point": "i",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in the first subparagraph of Article 15(1), the following point is inserted:",
+        "amending_text": "(i) the final offer price, or the maximum price in the case referred to in point (b)(i) of Article 17(1);",
+        "best_match_score": 0.56,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0015",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "15",
+          "paragraph": "1",
+          "point": "ii",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "in the first subparagraph of Article 15(1), the following point is inserted:",
+        "amending_text": "(ii) the total number of shares outstanding immediately after the share offer to the public, calculated either on the basis of the amount of shares offered to the public or, in the case referred to in point (b)(i) of Article 17(1), on the basis of the maximum amount of shares offered to the public.",
+        "best_match_score": 0.104019,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0016",
+        "operation_type": "replace",
+        "target_path": "annex/V/point/ii",
+        "target": {
+          "article": "None",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "V",
+          "annex_point": "ii"
+        },
+        "source_instruction": "in Annex V, point II is replaced by the following:",
+        "amending_text": "Statement of capitalisation and indebtedness (only for equity securities issued by companies with market capitalisation above EUR 200 000 000) and working capital statement (only for equity securities).",
+        "best_match_score": 0.27154,
+        "applied_mode": "replaced",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0017",
+        "operation_type": "replace",
+        "target_path": "annex/V/point/ii",
+        "target": {
+          "article": "None",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "V",
+          "annex_point": "ii"
+        },
+        "source_instruction": "in Annex V, point II is replaced by the following:",
+        "amending_text": "The purpose is to provide information on the issuer\u2019s capitalisation and indebtedness and information as to whether the working capital is sufficient to meet the issuer\u2019s present requirements or, if not, how the issuer proposes to provide the additional working capital needed.",
+        "best_match_score": 0.981818,
+        "applied_mode": "replaced",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      }
+    ]
+  },
+  "one_go_application_check": {
+    "passed": true,
+    "substantive_items_total": 17,
+    "substantive_items_not_fully_applied": 0,
+    "not_fully_applied_examples": []
+  }
+}

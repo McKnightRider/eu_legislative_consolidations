@@ -1,0 +1,1295 @@
+{
+  "created_at_utc": "2026-07-16T12:37:20.599292+00:00",
+  "base_docx": "/home/swm35/eu_legislative_consolidations/outputs/stage3_3.docx",
+  "amending_html": "/home/swm35/eu_legislative_consolidations/inputs/260706_EUPR_FourthAmendment.html",
+  "amendment_number": 3,
+  "output_docx": "/home/swm35/eu_legislative_consolidations/outputs/stage3_4.docx",
+  "analysis_docx": "outputs/qa/stage3_4_amendment_analysis.docx",
+  "color": "brown",
+  "amending_title": "REGULATION (EU) 2023/2869 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 13 December 2023 amending certain Regulations as regards the establishment and functioning of the European single access point (Text with EEA relevance)",
+  "recitals_inserted": 13,
+  "items_detected": 28,
+  "items_analyzed": 28,
+  "items_applied_by_replacement": 0,
+  "items_inserted_as_new": 28,
+  "analysis": [
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "1.\tFrom 10 July 2026, when making public any information referred to in Article 1(4) points (f) and (g), Article 1(5) first subparagraph, points (e) and (f), Articles 8(5), 9(4), 10(2), 17(2), 21(1), 21(9) and 23(1) of this Regulation, the issuer, the offeror or the person asking for admission to trading on a regulated market, where relevant, shall submit that information at the same time to the relevant collection body referred to in paragraph 3 of this Article for the purpose of making it accessible on the European single access point (ESAP) established under Regulation (EU) 2023/2859 of the European Parliament and of the Council[[FN:13]].",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 662,
+      "best_match_score": 0.25,
+      "best_match_text": "(a) the website of the issuer, the offeror or the person asking for admission to trading on a regulated market;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 55,
+        "deleted_words": 0,
+        "replaced_from_words": 3,
+        "replaced_to_words": 45
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "That information shall comply with the following requirements:",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 374,
+      "best_match_score": 0.607843,
+      "best_match_text": "It shall contain the following warnings:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 3,
+        "replaced_to_words": 5
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "be submitted in a data extractable format as defined in Article 2, point (3), of Regulation (EU) 2023/2859 or, where required by Union law, in a machine-readable format, as defined in Article 2, point (4), of that Regulation;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 786,
+      "best_match_score": 0.174648,
+      "best_match_text": "(a) the information requirements imposed by those third country laws are equivalent to the requirements under this Regulation; and",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 3,
+        "deleted_words": 1,
+        "replaced_from_words": 15,
+        "replaced_to_words": 33
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "be accompanied by the following metadata:",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 427,
+      "best_match_score": 0.574713,
+      "best_match_text": "(c) be made up of the following four sections:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 5,
+        "replaced_to_words": 3
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "all the names of the issuer, the offeror, or the person asking for admission to trading on a regulated market, where relevant, to which the information relates;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "i",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 662,
+      "best_match_score": 0.767528,
+      "best_match_text": "(a) the website of the issuer, the offeror or the person asking for admission to trading on a regulated market;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 7,
+        "deleted_words": 0,
+        "replaced_from_words": 2,
+        "replaced_to_words": 2
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "for legal persons, the legal entity identifier of the issuer, the offeror, or the person asking for admission to trading on a regulated market, where relevant, as specified pursuant to Article 7(4), point (b), of Regulation (EU) 2023/2859;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "ii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 737,
+      "best_match_score": 0.262425,
+      "best_match_text": "The issuer, the offeror, the person asking for admission to trading on a regulated market or the person responsible for drawing up the prospectus shall be notified of the certificate of approval at the same time as the competent authority of the host Member State.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 9,
+        "deleted_words": 0,
+        "replaced_from_words": 29,
+        "replaced_to_words": 15
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "for legal persons, the size of the issuer by category, as specified pursuant to Article 7(4), point (d), of that Regulation;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "iii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 295,
+      "best_match_score": 0.453441,
+      "best_match_text": "(g) \u2018credit institution\u2019 means a credit institution as defined in point (1) of Article 4(1) of Regulation (EU) No 575/2013;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 4,
+        "replaced_from_words": 14,
+        "replaced_to_words": 18
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "the industry sector(s) of the economic activities of the issuer, as specified pursuant to Article 7(4), point (e), of that Regulation;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "iv",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 295,
+      "best_match_score": 0.466926,
+      "best_match_text": "(g) \u2018credit institution\u2019 means a credit institution as defined in point (1) of Article 4(1) of Regulation (EU) No 575/2013;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 4,
+        "replaced_from_words": 14,
+        "replaced_to_words": 19
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "the type of information, as classified pursuant to Article 7(4), point (c), of that Regulation;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "v",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 200,
+      "best_match_score": 0.472222,
+      "best_match_text": "(79) The European Data Protection Supervisor was consulted in accordance with Article 42(1) of Regulation (EU) 2018/1725,",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 4,
+        "replaced_from_words": 11,
+        "replaced_to_words": 11
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "an indication of whether the information contains personal data.",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "1",
+      "target_point_marker": "vi",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 1214,
+      "best_match_score": 0.556391,
+      "best_match_text": "An indication of the website on which the documents may be inspected.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 0,
+        "replaced_from_words": 8,
+        "replaced_to_words": 4
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "2.\tFor the purposes of paragraph 1, point (b)(ii), issuers, offerors, or persons asking for admission to trading on a regulated market that are legal persons shall obtain a legal entity identifier.",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 352,
+      "best_match_score": 0.609418,
+      "best_match_text": "3. The issuer, offeror or person asking for the admission to trading on a regulated market may draw up the prospectus as a single document or as separate documents.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 16,
+        "replaced_to_words": 21
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "3.\tFor the purpose of making the information referred to in paragraph 1 of this Article accessible on ESAP, the collection body as defined in Article 2, point (2), of Regulation (EU) 2023/2859 shall be the competent authority. The competent authority shall, to the extent possible, build upon the procedures and infrastructures designed and implemented in application of Article 25(6), of this Regulation.",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 310,
+      "best_match_score": 0.192857,
+      "best_match_text": "(o) \u2018competent authority\u2019 means the authority designated by each Member State in accordance with Article 31, unless otherwise specified in this Regulation;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 1,
+        "replaced_from_words": 13,
+        "replaced_to_words": 56
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "4.\tFrom 10 July 2026, for the purposes of making the information referred to in Article 42(1) of this Regulation accessible on ESAP, the collection body defined in Article 2, point (2), of Regulation (EU) 2023/2859 shall be the competent authority.",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 200,
+      "best_match_score": 0.195122,
+      "best_match_text": "(79) The European Data Protection Supervisor was consulted in accordance with Article 42(1) of Regulation (EU) 2018/1725,",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 15,
+        "deleted_words": 2,
+        "replaced_from_words": 9,
+        "replaced_to_words": 20
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "That information shall comply with the following requirements:",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 374,
+      "best_match_score": 0.607843,
+      "best_match_text": "It shall contain the following warnings:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 3,
+        "replaced_to_words": 5
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "be submitted in a data extractable format as defined in Article 2, point (3), of Regulation (EU) 2023/2859;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 295,
+      "best_match_score": 0.521739,
+      "best_match_text": "(g) \u2018credit institution\u2019 means a credit institution as defined in point (1) of Article 4(1) of Regulation (EU) No 575/2013;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 2,
+        "deleted_words": 0,
+        "replaced_from_words": 14,
+        "replaced_to_words": 9
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "be accompanied by the following metadata:",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 427,
+      "best_match_score": 0.574713,
+      "best_match_text": "(c) be made up of the following four sections:",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 1,
+        "replaced_from_words": 5,
+        "replaced_to_words": 3
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "all the names of the issuer or, where applicable, of the offeror to which the information relates;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "i",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 662,
+      "best_match_score": 0.564593,
+      "best_match_text": "(a) the website of the issuer, the offeror or the person asking for admission to trading on a regulated market;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 4,
+        "deleted_words": 0,
+        "replaced_from_words": 13,
+        "replaced_to_words": 6
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "where available, the legal entity identifier of the issuer or, where applicable, of the offeror, as specified pursuant to Article 7(4), point (b), of Regulation (EU) 2023/2859;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "ii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 295,
+      "best_match_score": 0.468227,
+      "best_match_text": "(g) \u2018credit institution\u2019 means a credit institution as defined in point (1) of Article 4(1) of Regulation (EU) No 575/2013;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 17,
+        "replaced_to_words": 24
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "the type of information, as classified pursuant to Article 7(4), point (c), of that Regulation;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "iii",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 200,
+      "best_match_score": 0.472222,
+      "best_match_text": "(79) The European Data Protection Supervisor was consulted in accordance with Article 42(1) of Regulation (EU) 2018/1725,",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 4,
+        "replaced_from_words": 11,
+        "replaced_to_words": 11
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "an indication of whether the information contains personal data.",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "4",
+      "target_point_marker": "iv",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 1214,
+      "best_match_score": 0.556391,
+      "best_match_text": "An indication of the website on which the documents may be inspected.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 0,
+        "replaced_from_words": 8,
+        "replaced_to_words": 4
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "5.\tFor the purpose of ensuring the efficient collection and management of information submitted in accordance with paragraph 1, ESMA shall develop draft implementing technical standards to specify:",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 863,
+      "best_match_score": 0.450237,
+      "best_match_text": "3. In order to ensure uniform conditions of application of this Article, ESMA may develop draft implementing technical standards to determine the procedures and forms for exchange of information as referred to in paragraph 2.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 27,
+        "replaced_to_words": 20
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "any other metadata to accompany the information;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": "a",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 619,
+      "best_match_score": 0.513514,
+      "best_match_text": "(c) regulated information;",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 2,
+        "replaced_to_words": 6
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "the structuring of data in the information;",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": "b",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 325,
+      "best_match_score": 0.537037,
+      "best_match_text": "(ii) allows the unchanged reproduction of the information stored.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 2,
+        "deleted_words": 3,
+        "replaced_from_words": 2,
+        "replaced_to_words": 1
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "for which information a machine-readable format is required and, in such cases, which machine-readable format is to be used.",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": "c",
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 452,
+      "best_match_score": 0.422764,
+      "best_match_text": "7. The specific information on each of the different securities included in a base prospectus shall be clearly segregated.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 0,
+        "replaced_from_words": 16,
+        "replaced_to_words": 16
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "For the purposes of point (c), ESMA shall assess the advantages and disadvantages of different machine-readable formats and conduct appropriate field tests.",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 1129,
+      "best_match_score": 0.402299,
+      "best_match_text": "The purpose is to identify the issuer and its representatives and other individuals involved in the company\u2019s offer; these are the persons responsible for drawing up the registration document.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 1,
+        "deleted_words": 0,
+        "replaced_from_words": 26,
+        "replaced_to_words": 17
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "ESMA shall submit those draft implementing technical standards to the Commission.",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 433,
+      "best_match_score": 0.806818,
+      "best_match_text": "ESMA shall submit those draft regulatory technical standards to the Commission by 21 July 2018.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 0,
+        "deleted_words": 4,
+        "replaced_from_words": 1,
+        "replaced_to_words": 1
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "Power is conferred on the Commission to adopt the implementing technical standards referred to in the first subparagraph of this paragraph in accordance with Article 15 of Regulation (EU) No 1095/2010.",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": "5",
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 748,
+      "best_match_score": 0.953125,
+      "best_match_text": "Power is conferred on the Commission to adopt the implementing technical standards referred to in the first subparagraph in accordance with Article 15 of Regulation (EU) No 1095/2010.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 3,
+        "deleted_words": 0,
+        "replaced_from_words": 0,
+        "replaced_to_words": 0
+      }
+    },
+    {
+      "article_number": "13",
+      "article_heading": "Article 13 Amendment to Regulation (EU) 2017/1129",
+      "amending_text": "6.\tWhere necessary, ESMA shall adopt guidelines to ensure that the metadata submitted in accordance with paragraph 5, first subparagraph, point (a), are correct.",
+      "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+      "target_article_number": "21",
+      "target_paragraph_number": null,
+      "target_point_marker": null,
+      "target_annex_number": null,
+      "target_annex_point_marker": null,
+      "best_match_index": 380,
+      "best_match_score": 0.416382,
+      "best_match_text": "(f) where applicable, the comprehension alert required in accordance with point (b) of Article 8(3) of Regulation (EU) No 1286/2014.",
+      "applied_mode": "inserted",
+      "diff": {
+        "inserted_words": 4,
+        "deleted_words": 0,
+        "replaced_from_words": 16,
+        "replaced_to_words": 14
+      }
+    }
+  ],
+  "note": "Two-phase amendment application: identified relevant provisions are applied. Replacements are attempted first; unresolved replacement instructions are left as analysis_only (never inserted) to avoid creating duplicated legal provisions. In strict doubt mode, unresolved low-confidence items are intentionally deferred as analysis_only.",
+  "operation_proof": {
+    "summary": {
+      "operations_total": 28,
+      "precondition_failures": 0,
+      "unresolved_operations": 0,
+      "all_operations_proven": true
+    },
+    "precondition_failure_examples": [],
+    "operations": [
+      {
+        "operation_id": "op_0001",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "1. From 10 July 2026, when making public any information referred to in Article 1(4) points (f) and (g), Article 1(5) first subparagraph, points (e) and (f), Articles 8(5), 9(4), 10(2), 17(2), 21(1), 21(9) and 23(1) of this Regulation, the issuer, the offeror or the person asking for admission to trading on a regulated market, where relevant, shall submit that information at the same time to the relevant collection body referred to in paragraph 3 of this Article for the purpose of making it accessible on the European single access point (ESAP) established under Regulation (EU) 2023/2859 of the European Parliament and of the Council[[FN:13]].",
+        "best_match_score": 0.25,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0002",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "1",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "That information shall comply with the following requirements:",
+        "best_match_score": 0.607843,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0003",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "1",
+          "point": "a",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "be submitted in a data extractable format as defined in Article 2, point (3), of Regulation (EU) 2023/2859 or, where required by Union law, in a machine-readable format, as defined in Article 2, point (4), of that Regulation;",
+        "best_match_score": 0.174648,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0004",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "1",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "be accompanied by the following metadata:",
+        "best_match_score": 0.574713,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0005",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "1",
+          "point": "i",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "all the names of the issuer, the offeror, or the person asking for admission to trading on a regulated market, where relevant, to which the information relates;",
+        "best_match_score": 0.767528,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0006",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "1",
+          "point": "ii",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "for legal persons, the legal entity identifier of the issuer, the offeror, or the person asking for admission to trading on a regulated market, where relevant, as specified pursuant to Article 7(4), point (b), of Regulation (EU) 2023/2859;",
+        "best_match_score": 0.262425,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0007",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "1",
+          "point": "iii",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "for legal persons, the size of the issuer by category, as specified pursuant to Article 7(4), point (d), of that Regulation;",
+        "best_match_score": 0.453441,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0008",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "1",
+          "point": "iv",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "the industry sector(s) of the economic activities of the issuer, as specified pursuant to Article 7(4), point (e), of that Regulation;",
+        "best_match_score": 0.466926,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0009",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "1",
+          "point": "v",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "the type of information, as classified pursuant to Article 7(4), point (c), of that Regulation;",
+        "best_match_score": 0.472222,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0010",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "1",
+          "point": "vi",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "an indication of whether the information contains personal data.",
+        "best_match_score": 0.556391,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0011",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "2. For the purposes of paragraph 1, point (b)(ii), issuers, offerors, or persons asking for admission to trading on a regulated market that are legal persons shall obtain a legal entity identifier.",
+        "best_match_score": 0.609418,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0012",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "3. For the purpose of making the information referred to in paragraph 1 of this Article accessible on ESAP, the collection body as defined in Article 2, point (2), of Regulation (EU) 2023/2859 shall be the competent authority. The competent authority shall, to the extent possible, build upon the procedures and infrastructures designed and implemented in application of Article 25(6), of this Regulation.",
+        "best_match_score": 0.192857,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0013",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "4. From 10 July 2026, for the purposes of making the information referred to in Article 42(1) of this Regulation accessible on ESAP, the collection body defined in Article 2, point (2), of Regulation (EU) 2023/2859 shall be the competent authority.",
+        "best_match_score": 0.195122,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0014",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "4",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "That information shall comply with the following requirements:",
+        "best_match_score": 0.607843,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0015",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "4",
+          "point": "a",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "be submitted in a data extractable format as defined in Article 2, point (3), of Regulation (EU) 2023/2859;",
+        "best_match_score": 0.521739,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0016",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "4",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "be accompanied by the following metadata:",
+        "best_match_score": 0.574713,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0017",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "4",
+          "point": "i",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "all the names of the issuer or, where applicable, of the offeror to which the information relates;",
+        "best_match_score": 0.564593,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0018",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "4",
+          "point": "ii",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "where available, the legal entity identifier of the issuer or, where applicable, of the offeror, as specified pursuant to Article 7(4), point (b), of Regulation (EU) 2023/2859;",
+        "best_match_score": 0.468227,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0019",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "4",
+          "point": "iii",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "the type of information, as classified pursuant to Article 7(4), point (c), of that Regulation;",
+        "best_match_score": 0.472222,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0020",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "4",
+          "point": "iv",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "an indication of whether the information contains personal data.",
+        "best_match_score": 0.556391,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0021",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "5. For the purpose of ensuring the efficient collection and management of information submitted in accordance with paragraph 1, ESMA shall develop draft implementing technical standards to specify:",
+        "best_match_score": 0.450237,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0022",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "5",
+          "point": "a",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "any other metadata to accompany the information;",
+        "best_match_score": 0.513514,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0023",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "5",
+          "point": "b",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "the structuring of data in the information;",
+        "best_match_score": 0.537037,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0024",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "5",
+          "point": "c",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "for which information a machine-readable format is required and, in such cases, which machine-readable format is to be used.",
+        "best_match_score": 0.422764,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0025",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "5",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "For the purposes of point (c), ESMA shall assess the advantages and disadvantages of different machine-readable formats and conduct appropriate field tests.",
+        "best_match_score": 0.402299,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0026",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "5",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "ESMA shall submit those draft implementing technical standards to the Commission.",
+        "best_match_score": 0.806818,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0027",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "5",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "Power is conferred on the Commission to adopt the implementing technical standards referred to in the first subparagraph of this paragraph in accordance with Article 15 of Regulation (EU) No 1095/2010.",
+        "best_match_score": 0.953125,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      },
+      {
+        "operation_id": "op_0028",
+        "operation_type": "insert",
+        "target_path": "annex/None/point/None",
+        "target": {
+          "article": "21",
+          "paragraph": "None",
+          "point": "None",
+          "annex": "None",
+          "annex_point": "None"
+        },
+        "source_instruction": "In Regulation (EU) 2017/1129, the following article is inserted:",
+        "amending_text": "6. Where necessary, ESMA shall adopt guidelines to ensure that the metadata submitted in accordance with paragraph 5, first subparagraph, point (a), are correct.",
+        "best_match_score": 0.416382,
+        "applied_mode": "inserted",
+        "preconditions": {
+          "has_amending_text": true,
+          "has_scope_target": true,
+          "has_required_paragraph_scope": true
+        },
+        "preconditions_passed": true,
+        "mutation_proven": true,
+        "status": "proven"
+      }
+    ]
+  },
+  "one_go_application_check": {
+    "passed": true,
+    "substantive_items_total": 28,
+    "substantive_items_not_fully_applied": 0,
+    "not_fully_applied_examples": []
+  }
+}
