@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-07-16T12:37:56.877034+00:00",
+  "created_at_utc": "2026-07-16T13:38:06.267454+00:00",
   "docx_path": "/home/swm35/eu_legislative_consolidations/outputs/stage3_4.docx",
   "analysis_json_path": "outputs/qa/stage3_4_amendment_analysis.json",
   "analysis_json_found": true,
@@ -10,15 +10,15 @@
       "color_check_mode": "layer-aware-by-expected-color",
       "expected_revision_color_hex": "804000",
       "all_revision_runs": {
-        "inserted_runs_total": 451,
+        "inserted_runs_total": 455,
         "deleted_runs_total": 6
       },
       "current_layer_runs": {
-        "inserted_runs_total": 90,
+        "inserted_runs_total": 91,
         "deleted_runs_total": 0
       },
       "legacy_or_other_layer_runs": {
-        "inserted_runs_total": 361,
+        "inserted_runs_total": 364,
         "deleted_runs_total": 6
       }
     },
@@ -69,11 +69,11 @@
           "source_path": "/home/swm35/eu_legislative_consolidations/consolidated/260711_Consolidated_FourthAmendment.html",
           "strict_coverage": {
             "total_source_tokens": 35873,
-            "total_docx_tokens": 59394,
+            "total_docx_tokens": 59406,
             "matched_tokens": 35519,
             "missing_tokens_total": 354,
             "missing_unique_tokens": 156,
-            "extra_tokens_total": 23875,
+            "extra_tokens_total": 23887,
             "extra_unique_tokens": 2388,
             "coverage_ratio": 0.9901318540406434,
             "top_missing": [
@@ -332,12 +332,12 @@
                 222
               ],
               [
-                "is",
-                208
+                "by",
+                211
               ],
               [
-                "by",
-                207
+                "is",
+                208
               ],
               [
                 "prospectus",
@@ -360,12 +360,12 @@
                 165
               ],
               [
-                "this",
-                161
+                "as",
+                164
               ],
               [
-                "as",
-                160
+                "this",
+                161
               ],
               [
                 "eu",
@@ -485,11 +485,11 @@
           "strict_coverage_passed": false,
           "practical_coverage": {
             "total_source_tokens": 30634,
-            "total_docx_tokens": 53179,
+            "total_docx_tokens": 53191,
             "matched_tokens": 30547,
             "missing_tokens_total": 87,
             "missing_unique_tokens": 68,
-            "extra_tokens_total": 22632,
+            "extra_tokens_total": 22644,
             "extra_unique_tokens": 2255,
             "coverage_ratio": 0.9971600182803421,
             "top_missing": [
@@ -744,12 +744,12 @@
                 222
               ],
               [
-                "is",
-                208
+                "by",
+                211
               ],
               [
-                "by",
-                207
+                "is",
+                208
               ],
               [
                 "prospectus",
@@ -772,12 +772,12 @@
                 165
               ],
               [
-                "this",
-                161
+                "as",
+                164
               ],
               [
-                "as",
-                160
+                "this",
+                161
               ],
               [
                 "securities",
@@ -902,18 +902,18 @@
           "practical_min_coverage_threshold": 0.985,
           "practical_coverage_passed": true,
           "levenshtein": {
-            "docx_chars": 375185,
+            "docx_chars": 375241,
             "source_chars": 220888,
-            "distance": 371862,
-            "normalized_similarity": 0.008857975449315771,
+            "distance": 372074,
+            "normalized_similarity": 0.008441125997896428,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
           "token_levenshtein": {
-            "docx_tokens": 59394,
+            "docx_tokens": 59406,
             "source_tokens": 35873,
-            "distance": 16753,
-            "normalized_similarity": 0.7179401051780785,
+            "distance": 16780,
+            "normalized_similarity": 0.7175348187953274,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
@@ -924,11 +924,11 @@
           "source_path": "/home/swm35/eu_legislative_consolidations/consolidated/260711_Consolidated_FourthAmendment.pdf",
           "strict_coverage": {
             "total_source_tokens": 38073,
-            "total_docx_tokens": 59394,
+            "total_docx_tokens": 59406,
             "matched_tokens": 34071,
             "missing_tokens_total": 4002,
             "missing_unique_tokens": 1264,
-            "extra_tokens_total": 25323,
+            "extra_tokens_total": 25335,
             "extra_unique_tokens": 2449,
             "coverage_ratio": 0.8948861397840989,
             "top_missing": [
@@ -1195,12 +1195,12 @@
                 213
               ],
               [
-                "on",
-                209
+                "by",
+                212
               ],
               [
-                "by",
-                208
+                "on",
+                209
               ],
               [
                 "is",
@@ -1220,7 +1220,7 @@
               ],
               [
                 "as",
-                157
+                161
               ],
               [
                 "an",
@@ -1340,11 +1340,11 @@
           "strict_coverage_passed": false,
           "practical_coverage": {
             "total_source_tokens": 31554,
-            "total_docx_tokens": 53179,
+            "total_docx_tokens": 53191,
             "matched_tokens": 29092,
             "missing_tokens_total": 2462,
             "missing_unique_tokens": 1170,
-            "extra_tokens_total": 24087,
+            "extra_tokens_total": 24099,
             "extra_unique_tokens": 2331,
             "coverage_ratio": 0.9219750269379476,
             "top_missing": [
@@ -1607,12 +1607,12 @@
                 213
               ],
               [
-                "on",
-                209
+                "by",
+                212
               ],
               [
-                "by",
-                208
+                "on",
+                209
               ],
               [
                 "is",
@@ -1632,7 +1632,7 @@
               ],
               [
                 "as",
-                157
+                161
               ],
               [
                 "an",
@@ -1757,18 +1757,18 @@
           "practical_min_coverage_threshold": 0.985,
           "practical_coverage_passed": false,
           "levenshtein": {
-            "docx_chars": 375185,
+            "docx_chars": 375241,
             "source_chars": 225241,
-            "distance": 318192,
-            "normalized_similarity": 0.15190548044221935,
+            "distance": 318558,
+            "normalized_similarity": 0.15105864955152695,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
           "token_levenshtein": {
-            "docx_tokens": 59394,
+            "docx_tokens": 59406,
             "source_tokens": 38073,
-            "distance": 20522,
-            "normalized_similarity": 0.6544779258620866,
+            "distance": 20584,
+            "normalized_similarity": 0.6534945988366725,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },

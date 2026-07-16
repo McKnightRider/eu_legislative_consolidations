@@ -615,6 +615,21 @@ def style_inserted_title_run(run) -> None:
     u.set(qn("w:color"), revision_color_hex())
 
 
+def force_paragraph_justification(paragraph) -> None:
+    """Set justification in both python-docx and raw OOXML form.
+
+    Some Office renderers respect the underlying XML justification more
+    consistently than the high-level paragraph alignment property alone.
+    """
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    p_pr = paragraph._p.get_or_add_pPr()
+    jc = p_pr.find(qn("w:jc"))
+    if jc is None:
+        jc = OxmlElement("w:jc")
+        p_pr.append(jc)
+    jc.set(qn("w:val"), "both")
+
+
 def paragraph_is_nested_roman_point(paragraph) -> bool:
     marker = first_top_level_point_marker(getattr(paragraph, "text", ""))
     return bool(marker and is_roman_point_marker(marker))
@@ -1380,6 +1395,7 @@ def insert_annex_block_lines(doc: Document, insertion_index: int, annex_lines: l
     heading_run.bold = False
     heading_run.italic = True
     style_inserted_run_no_bold_change(heading_run)
+    heading_run.italic = True
 
     line_idx = 1
     subtitle = normalize_text(annex_lines[1]) if len(annex_lines) > 1 else ""
@@ -1389,6 +1405,8 @@ def insert_annex_block_lines(doc: Document, insertion_index: int, annex_lines: l
         subtitle_run.bold = True
         subtitle_run.italic = False
         style_inserted_run_no_bold_change(subtitle_run)
+        subtitle_run.bold = True
+        subtitle_run.italic = False
         line_idx = 2
 
     current_level = 1
@@ -1429,14 +1447,14 @@ def insert_annex_block_lines(doc: Document, insertion_index: int, annex_lines: l
         )
 
         if marker is not None or annex_heading_marker:
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            force_paragraph_justification(p)
             p.paragraph_format.left_indent = Cm(level)
             p.paragraph_format.first_line_indent = Cm(-1)
             current_level = level
             last_body_level = level
             previous_was_point = False
         elif point_marker is not None:
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            force_paragraph_justification(p)
             p.paragraph_format.left_indent = Cm(level)
             p.paragraph_format.first_line_indent = Cm(-1)
             current_level = level
@@ -1445,7 +1463,7 @@ def insert_annex_block_lines(doc: Document, insertion_index: int, annex_lines: l
         else:
             if reset_to_body_after_point_series:
                 level = max(1, last_body_level)
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            force_paragraph_justification(p)
             p.paragraph_format.left_indent = Cm(level)
             p.paragraph_format.first_line_indent = None
             current_level = level
@@ -1481,9 +1499,6 @@ def apply_annex_blocks_from_amending_html(doc: Document, amending_html: Path) ->
                 old_lines = [normalize_text(strip_src_artifacts(p.text)) for p in existing_paras]
                 old_keys = build_annex_contextual_keys(old_lines)
                 new_keys = build_annex_contextual_keys(new_lines)
-                old_units = build_annex_alignment_units(old_lines)
-                new_units = build_annex_alignment_units(new_lines)
-
                 def insert_new_line_at_current_anchor(new_text: str, old_pos: int) -> None:
                     anchor_para = existing_paras[old_pos] if old_pos < len(existing_paras) else None
                     if anchor_para is not None:
@@ -1513,7 +1528,7 @@ def apply_annex_blocks_from_amending_html(doc: Document, amending_html: Path) ->
                     run = p.add_run(new_text)
                     style_inserted_run_no_bold_change(run)
 
-                sm_keys = SequenceMatcher(None, old_units, new_units)
+                sm_keys = SequenceMatcher(None, old_keys, new_keys)
                 for op, i1, i2, j1, j2 in sm_keys.get_opcodes():
                     if op == "equal":
                         for old_idx, new_idx in zip(range(i1, i2), range(j1, j2)):
@@ -1639,6 +1654,7 @@ def insert_annex_va_from_amending_html(doc: Document, amending_html: Path) -> in
     heading_run.bold = False
     heading_run.italic = True
     style_inserted_run_no_bold_change(heading_run)
+    heading_run.italic = True
 
     line_idx = 1
     subtitle = normalize_text(annex_lines[1]) if len(annex_lines) > 1 else ""
@@ -1648,6 +1664,8 @@ def insert_annex_va_from_amending_html(doc: Document, amending_html: Path) -> in
         subtitle_run.bold = True
         subtitle_run.italic = False
         style_inserted_run_no_bold_change(subtitle_run)
+        subtitle_run.bold = True
+        subtitle_run.italic = False
         line_idx = 2
 
     current_level = 1
@@ -1689,14 +1707,14 @@ def insert_annex_va_from_amending_html(doc: Document, amending_html: Path) -> in
 
         if marker is not None or annex_heading_marker:
             # Annex section headers like "I. Summary" follow stage1 hanging style.
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            force_paragraph_justification(p)
             p.paragraph_format.left_indent = Cm(level)
             p.paragraph_format.first_line_indent = Cm(-1)
             current_level = level
             last_body_level = level
             previous_was_point = False
         elif point_marker is not None:
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            force_paragraph_justification(p)
             p.paragraph_format.left_indent = Cm(level)
             p.paragraph_format.first_line_indent = Cm(-1)
             current_level = level
@@ -1706,7 +1724,7 @@ def insert_annex_va_from_amending_html(doc: Document, amending_html: Path) -> in
             if reset_to_body_after_point_series:
                 level = max(1, last_body_level)
             # Annex body paragraphs remain indented within the annex section.
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            force_paragraph_justification(p)
             p.paragraph_format.left_indent = Cm(level)
             p.paragraph_format.first_line_indent = None
             current_level = level
@@ -2948,14 +2966,75 @@ def insert_amending_title(doc: Document, insertion_index: int, title_text: str) 
         return
     normalized_title = normalize_text(title_text)
     existing_title = next((p for p in doc.paragraphs if normalize_text(p.text) == normalized_title), None)
+
+    def style_as_amended_by_paragraph(paragraph) -> None:
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        paragraph.paragraph_format.left_indent = Cm(0)
+        paragraph.paragraph_format.first_line_indent = None
+        paragraph.paragraph_format.space_before = Cm(0)
+        paragraph.paragraph_format.space_after = Cm(0)
+        if not paragraph.runs:
+            paragraph.add_run("as amended by")
+        for run in paragraph.runs:
+            if normalize_text(run.text) == "as amended by":
+                style_inserted_run_no_bold_change(run)
+
     if existing_title is not None:
+        title_idx = find_current_paragraph_index(doc, existing_title)
+        if title_idx is None:
+            title_idx = insertion_index
+
+        prev_idx = title_idx - 1
+        while prev_idx >= 0 and not normalize_text(doc.paragraphs[prev_idx].text):
+            prev_idx -= 1
+        needs_as_amended_by = prev_idx < 0 or normalize_text(doc.paragraphs[prev_idx].text) != "as amended by"
+
+        if needs_as_amended_by:
+            spacer_before = insert_plain_paragraph_before_index(doc, title_idx)
+            spacer_before.paragraph_format.left_indent = Cm(0)
+            spacer_before.paragraph_format.space_before = Cm(0)
+            spacer_before.paragraph_format.space_after = Cm(0)
+            title_idx += 1
+
+            as_amended_by_para = insert_plain_paragraph_before_index(doc, title_idx)
+            style_as_amended_by_paragraph(as_amended_by_para)
+            title_idx += 1
+
+            spacer_after = insert_plain_paragraph_before_index(doc, title_idx)
+            spacer_after.paragraph_format.left_indent = Cm(0)
+            spacer_after.paragraph_format.space_before = Cm(0)
+            spacer_after.paragraph_format.space_after = Cm(0)
+            title_idx += 1
+
+        if prev_idx >= 0 and normalize_text(doc.paragraphs[prev_idx].text) == "as amended by":
+            style_as_amended_by_paragraph(doc.paragraphs[prev_idx])
+
         for run in existing_title.runs:
             run.bold = True
             style_inserted_title_run(run)
         return
+
+    spacer_before = insert_plain_paragraph_before_index(doc, insertion_index)
+    spacer_before.paragraph_format.left_indent = Cm(0)
+    spacer_before.paragraph_format.space_before = Cm(0)
+    spacer_before.paragraph_format.space_after = Cm(0)
+    insertion_index += 1
+
+    as_amended_by_para = insert_plain_paragraph_before_index(doc, insertion_index)
+    style_as_amended_by_paragraph(as_amended_by_para)
+    insertion_index += 1
+
+    spacer_after = insert_plain_paragraph_before_index(doc, insertion_index)
+    spacer_after.paragraph_format.left_indent = Cm(0)
+    spacer_after.paragraph_format.space_before = Cm(0)
+    spacer_after.paragraph_format.space_after = Cm(0)
+    insertion_index += 1
+
     p = insert_plain_paragraph_before_index(doc, insertion_index)
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.left_indent = Cm(0)
+    p.paragraph_format.space_before = Cm(0)
+    p.paragraph_format.space_after = Cm(0)
     lines = split_amending_title(title_text)
     for idx, line in enumerate(lines):
         if idx:

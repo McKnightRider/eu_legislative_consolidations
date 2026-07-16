@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-07-16T12:36:06.160825+00:00",
+  "created_at_utc": "2026-07-16T13:33:48.667587+00:00",
   "docx_path": "/home/swm35/eu_legislative_consolidations/outputs/stage3_2.docx",
   "analysis_json_path": "outputs/qa/stage3_2_amendment_analysis.json",
   "analysis_json_found": true,
@@ -10,15 +10,15 @@
       "color_check_mode": "layer-aware-by-expected-color",
       "expected_revision_color_hex": "800080",
       "all_revision_runs": {
-        "inserted_runs_total": 201,
+        "inserted_runs_total": 203,
         "deleted_runs_total": 2
       },
       "current_layer_runs": {
-        "inserted_runs_total": 128,
+        "inserted_runs_total": 129,
         "deleted_runs_total": 0
       },
       "legacy_or_other_layer_runs": {
-        "inserted_runs_total": 73,
+        "inserted_runs_total": 74,
         "deleted_runs_total": 2
       }
     },
@@ -69,11 +69,11 @@
           "source_path": "/home/swm35/eu_legislative_consolidations/consolidated/260711_Consolidated_SecondAmendment.html",
           "strict_coverage": {
             "total_source_tokens": 35024,
-            "total_docx_tokens": 50838,
+            "total_docx_tokens": 50844,
             "matched_tokens": 34011,
             "missing_tokens_total": 1013,
             "missing_unique_tokens": 363,
-            "extra_tokens_total": 16827,
+            "extra_tokens_total": 16833,
             "extra_unique_tokens": 2027,
             "coverage_ratio": 0.9710769757880311,
             "top_missing": [
@@ -332,12 +332,12 @@
                 185
               ],
               [
-                "is",
-                150
+                "by",
+                151
               ],
               [
-                "by",
-                149
+                "is",
+                150
               ],
               [
                 "with",
@@ -368,16 +368,16 @@
                 104
               ],
               [
+                "as",
+                103
+              ],
+              [
                 "investors",
                 102
               ],
               [
                 "information",
                 102
-              ],
-              [
-                "as",
-                101
               ],
               [
                 "not",
@@ -485,11 +485,11 @@
           "strict_coverage_passed": false,
           "practical_coverage": {
             "total_source_tokens": 30004,
-            "total_docx_tokens": 45472,
+            "total_docx_tokens": 45478,
             "matched_tokens": 29410,
             "missing_tokens_total": 594,
             "missing_unique_tokens": 254,
-            "extra_tokens_total": 16062,
+            "extra_tokens_total": 16068,
             "extra_unique_tokens": 1926,
             "coverage_ratio": 0.9802026396480469,
             "top_missing": [
@@ -744,12 +744,12 @@
                 185
               ],
               [
-                "is",
-                150
+                "by",
+                151
               ],
               [
-                "by",
-                149
+                "is",
+                150
               ],
               [
                 "with",
@@ -780,16 +780,16 @@
                 104
               ],
               [
+                "as",
+                103
+              ],
+              [
                 "investors",
                 102
               ],
               [
                 "information",
                 102
-              ],
-              [
-                "as",
-                101
               ],
               [
                 "not",
@@ -902,18 +902,18 @@
           "practical_min_coverage_threshold": 0.985,
           "practical_coverage_passed": false,
           "levenshtein": {
-            "docx_chars": 321054,
+            "docx_chars": 321082,
             "source_chars": 215559,
-            "distance": 316061,
-            "normalized_similarity": 0.01555310810584164,
+            "distance": 316226,
+            "normalized_similarity": 0.015123704674074475,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
           "token_levenshtein": {
-            "docx_tokens": 50838,
+            "docx_tokens": 50844,
             "source_tokens": 35024,
-            "distance": 15253,
-            "normalized_similarity": 0.6999604015746197,
+            "distance": 15270,
+            "normalized_similarity": 0.6996785764196208,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
@@ -924,11 +924,11 @@
           "source_path": "/home/swm35/eu_legislative_consolidations/consolidated/260711_Consolidated_SecondAmendment.pdf",
           "strict_coverage": {
             "total_source_tokens": 37131,
-            "total_docx_tokens": 50838,
+            "total_docx_tokens": 50844,
             "matched_tokens": 32634,
             "missing_tokens_total": 4497,
             "missing_unique_tokens": 1450,
-            "extra_tokens_total": 18204,
+            "extra_tokens_total": 18210,
             "extra_unique_tokens": 2110,
             "coverage_ratio": 0.8788882604831543,
             "top_missing": [
@@ -1200,7 +1200,7 @@
               ],
               [
                 "by",
-                149
+                151
               ],
               [
                 "is",
@@ -1239,16 +1239,16 @@
                 105
               ],
               [
+                "as",
+                100
+              ],
+              [
                 "competent",
                 100
               ],
               [
                 "are",
                 99
-              ],
-              [
-                "as",
-                98
               ],
               [
                 "their",
@@ -1340,11 +1340,11 @@
           "strict_coverage_passed": false,
           "practical_coverage": {
             "total_source_tokens": 30865,
-            "total_docx_tokens": 45472,
+            "total_docx_tokens": 45478,
             "matched_tokens": 28022,
             "missing_tokens_total": 2843,
             "missing_unique_tokens": 1331,
-            "extra_tokens_total": 17450,
+            "extra_tokens_total": 17456,
             "extra_unique_tokens": 2022,
             "coverage_ratio": 0.9078891948809331,
             "top_missing": [
@@ -1612,7 +1612,7 @@
               ],
               [
                 "by",
-                149
+                151
               ],
               [
                 "is",
@@ -1651,16 +1651,16 @@
                 105
               ],
               [
+                "as",
+                100
+              ],
+              [
                 "competent",
                 100
               ],
               [
                 "are",
                 99
-              ],
-              [
-                "as",
-                98
               ],
               [
                 "their",
@@ -1757,18 +1757,18 @@
           "practical_min_coverage_threshold": 0.985,
           "practical_coverage_passed": false,
           "levenshtein": {
-            "docx_chars": 321054,
+            "docx_chars": 321082,
             "source_chars": 219555,
-            "distance": 280442,
-            "normalized_similarity": 0.126494379486838,
+            "distance": 280804,
+            "normalized_similarity": 0.12544461440855878,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
           "token_levenshtein": {
-            "docx_tokens": 50838,
+            "docx_tokens": 50844,
             "source_tokens": 37131,
-            "distance": 18452,
-            "normalized_similarity": 0.637042594550353,
+            "distance": 18468,
+            "normalized_similarity": 0.6367718101733447,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },

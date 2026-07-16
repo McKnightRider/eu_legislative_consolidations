@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-07-16T12:35:38.965473+00:00",
+  "created_at_utc": "2026-07-16T13:32:47.422821+00:00",
   "base_docx": "/home/swm35/eu_legislative_consolidations/outputs/stage3_1.docx",
   "amending_html": "/home/swm35/eu_legislative_consolidations/inputs/260706_EUPR_SecondAmendment.html",
   "amendment_number": 1,
@@ -23,7 +23,7 @@
       "target_point_marker": "k",
       "target_annex_number": null,
       "target_annex_point_marker": null,
-      "best_match_index": 494,
+      "best_match_index": 495,
       "best_match_score": 0.271605,
       "best_match_text": "(i) remuneration reports as referred to in Article 9b of Directive 2007/36/EC of the European Parliament and of the Council;",
       "applied_mode": "inserted",

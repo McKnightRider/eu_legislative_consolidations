@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-07-16T12:35:37.022119+00:00",
+  "created_at_utc": "2026-07-16T13:32:43.089377+00:00",
   "docx_path": "/home/swm35/eu_legislative_consolidations/outputs/stage3_1.docx",
   "analysis_json_path": "outputs/qa/stage3_1_amendment_analysis.json",
   "analysis_json_found": true,
@@ -10,11 +10,11 @@
       "color_check_mode": "layer-aware-by-expected-color",
       "expected_revision_color_hex": "E67800",
       "all_revision_runs": {
-        "inserted_runs_total": 73,
+        "inserted_runs_total": 74,
         "deleted_runs_total": 2
       },
       "current_layer_runs": {
-        "inserted_runs_total": 73,
+        "inserted_runs_total": 74,
         "deleted_runs_total": 2
       },
       "legacy_or_other_layer_runs": {
@@ -69,11 +69,11 @@
           "source_path": "/home/swm35/eu_legislative_consolidations/consolidated/260711_Consolidated_FirstAmendment.html",
           "strict_coverage": {
             "total_source_tokens": 31069,
-            "total_docx_tokens": 43684,
+            "total_docx_tokens": 43687,
             "matched_tokens": 30757,
             "missing_tokens_total": 312,
             "missing_unique_tokens": 123,
-            "extra_tokens_total": 12927,
+            "extra_tokens_total": 12930,
             "extra_unique_tokens": 1733,
             "coverage_ratio": 0.989957835784866,
             "top_missing": [
@@ -345,7 +345,7 @@
               ],
               [
                 "by",
-                109
+                110
               ],
               [
                 "an",
@@ -365,7 +365,7 @@
               ],
               [
                 "as",
-                82
+                83
               ],
               [
                 "this",
@@ -485,11 +485,11 @@
           "strict_coverage_passed": false,
           "practical_coverage": {
             "total_source_tokens": 26487,
-            "total_docx_tokens": 38747,
+            "total_docx_tokens": 38750,
             "matched_tokens": 26429,
             "missing_tokens_total": 58,
             "missing_unique_tokens": 43,
-            "extra_tokens_total": 12318,
+            "extra_tokens_total": 12321,
             "extra_unique_tokens": 1657,
             "coverage_ratio": 0.9978102465360366,
             "top_missing": [
@@ -729,7 +729,7 @@
               ],
               [
                 "by",
-                109
+                110
               ],
               [
                 "an",
@@ -749,7 +749,7 @@
               ],
               [
                 "as",
-                82
+                83
               ],
               [
                 "this",
@@ -874,18 +874,18 @@
           "practical_min_coverage_threshold": 0.985,
           "practical_coverage_passed": true,
           "levenshtein": {
-            "docx_chars": 272518,
+            "docx_chars": 272532,
             "source_chars": 191198,
             "distance": 267452,
-            "normalized_similarity": 0.018588963934822175,
+            "normalized_similarity": 0.018640156987902442,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
           "token_levenshtein": {
-            "docx_tokens": 43684,
+            "docx_tokens": 43687,
             "source_tokens": 31069,
             "distance": 8608,
-            "normalized_similarity": 0.8029376747421508,
+            "normalized_similarity": 0.8029589598159345,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
@@ -896,11 +896,11 @@
           "source_path": "/home/swm35/eu_legislative_consolidations/consolidated/260711_Consolidated_FirstAmendment.pdf",
           "strict_coverage": {
             "total_source_tokens": 31717,
-            "total_docx_tokens": 43684,
+            "total_docx_tokens": 43687,
             "matched_tokens": 30574,
             "missing_tokens_total": 1143,
             "missing_unique_tokens": 215,
-            "extra_tokens_total": 13110,
+            "extra_tokens_total": 13113,
             "extra_unique_tokens": 1721,
             "coverage_ratio": 0.963962543746256,
             "top_missing": [
@@ -1172,7 +1172,7 @@
               ],
               [
                 "by",
-                109
+                110
               ],
               [
                 "an",
@@ -1192,7 +1192,7 @@
               ],
               [
                 "as",
-                82
+                83
               ],
               [
                 "not",
@@ -1312,11 +1312,11 @@
           "strict_coverage_passed": false,
           "practical_coverage": {
             "total_source_tokens": 26634,
-            "total_docx_tokens": 38747,
+            "total_docx_tokens": 38750,
             "matched_tokens": 26255,
             "missing_tokens_total": 379,
             "missing_unique_tokens": 141,
-            "extra_tokens_total": 12492,
+            "extra_tokens_total": 12495,
             "extra_unique_tokens": 1665,
             "coverage_ratio": 0.9857700683337088,
             "top_missing": [
@@ -1584,7 +1584,7 @@
               ],
               [
                 "by",
-                109
+                110
               ],
               [
                 "an",
@@ -1604,7 +1604,7 @@
               ],
               [
                 "as",
-                82
+                83
               ],
               [
                 "not",
@@ -1729,18 +1729,18 @@
           "practical_min_coverage_threshold": 0.985,
           "practical_coverage_passed": true,
           "levenshtein": {
-            "docx_chars": 272518,
+            "docx_chars": 272532,
             "source_chars": 194106,
-            "distance": 228214,
-            "normalized_similarity": 0.16257200658345905,
+            "distance": 228213,
+            "normalized_similarity": 0.16261856085445248,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
           "token_levenshtein": {
-            "docx_tokens": 43684,
+            "docx_tokens": 43687,
             "source_tokens": 31717,
             "distance": 9027,
-            "normalized_similarity": 0.7933581782734977,
+            "normalized_similarity": 0.7933796615564161,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },

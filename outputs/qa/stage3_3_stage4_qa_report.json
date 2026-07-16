@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-07-16T12:37:02.223053+00:00",
+  "created_at_utc": "2026-07-16T13:35:58.991793+00:00",
   "docx_path": "/home/swm35/eu_legislative_consolidations/outputs/stage3_3.docx",
   "analysis_json_path": "outputs/qa/stage3_3_amendment_analysis.json",
   "analysis_json_found": true,
@@ -10,15 +10,15 @@
       "color_check_mode": "layer-aware-by-expected-color",
       "expected_revision_color_hex": "0066CC",
       "all_revision_runs": {
-        "inserted_runs_total": 361,
+        "inserted_runs_total": 364,
         "deleted_runs_total": 6
       },
       "current_layer_runs": {
-        "inserted_runs_total": 160,
+        "inserted_runs_total": 161,
         "deleted_runs_total": 4
       },
       "legacy_or_other_layer_runs": {
-        "inserted_runs_total": 201,
+        "inserted_runs_total": 203,
         "deleted_runs_total": 2
       }
     },
@@ -92,11 +92,11 @@
           "source_path": "/home/swm35/eu_legislative_consolidations/consolidated/260711_Consolidated_ThirdAmendment.html",
           "strict_coverage": {
             "total_source_tokens": 35060,
-            "total_docx_tokens": 56753,
+            "total_docx_tokens": 56762,
             "matched_tokens": 34700,
             "missing_tokens_total": 360,
             "missing_unique_tokens": 150,
-            "extra_tokens_total": 22053,
+            "extra_tokens_total": 22062,
             "extra_unique_tokens": 2295,
             "coverage_ratio": 0.9897318881916715,
             "top_missing": [
@@ -359,12 +359,12 @@
                 201
               ],
               [
-                "is",
+                "by",
                 191
               ],
               [
-                "by",
-                188
+                "is",
+                191
               ],
               [
                 "crowdfunding",
@@ -388,7 +388,7 @@
               ],
               [
                 "as",
-                147
+                150
               ],
               [
                 "securities",
@@ -508,11 +508,11 @@
           "strict_coverage_passed": false,
           "practical_coverage": {
             "total_source_tokens": 30015,
-            "total_docx_tokens": 50867,
+            "total_docx_tokens": 50876,
             "matched_tokens": 29932,
             "missing_tokens_total": 83,
             "missing_unique_tokens": 62,
-            "extra_tokens_total": 20935,
+            "extra_tokens_total": 20944,
             "extra_unique_tokens": 2181,
             "coverage_ratio": 0.9972347159753456,
             "top_missing": [
@@ -771,12 +771,12 @@
                 201
               ],
               [
-                "is",
+                "by",
                 191
               ],
               [
-                "by",
-                188
+                "is",
+                191
               ],
               [
                 "crowdfunding",
@@ -800,7 +800,7 @@
               ],
               [
                 "as",
-                147
+                150
               ],
               [
                 "securities",
@@ -925,18 +925,18 @@
           "practical_min_coverage_threshold": 0.985,
           "practical_coverage_passed": true,
           "levenshtein": {
-            "docx_chars": 358408,
+            "docx_chars": 358450,
             "source_chars": 215904,
-            "distance": 353292,
-            "normalized_similarity": 0.01427447101923693,
+            "distance": 353497,
+            "normalized_similarity": 0.013817262524505793,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
           "token_levenshtein": {
-            "docx_tokens": 56753,
+            "docx_tokens": 56762,
             "source_tokens": 35060,
-            "distance": 15365,
-            "normalized_similarity": 0.7292649189112653,
+            "distance": 15390,
+            "normalized_similarity": 0.7288667203938054,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
@@ -947,11 +947,11 @@
           "source_path": "/home/swm35/eu_legislative_consolidations/consolidated/260711_Consolidated_ThirdAmendment.pdf",
           "strict_coverage": {
             "total_source_tokens": 37207,
-            "total_docx_tokens": 56753,
+            "total_docx_tokens": 56762,
             "matched_tokens": 33298,
             "missing_tokens_total": 3909,
             "missing_unique_tokens": 1250,
-            "extra_tokens_total": 23455,
+            "extra_tokens_total": 23464,
             "extra_unique_tokens": 2359,
             "coverage_ratio": 0.8949391243583197,
             "top_missing": [
@@ -1219,7 +1219,7 @@
               ],
               [
                 "by",
-                189
+                192
               ],
               [
                 "crowdfunding",
@@ -1246,12 +1246,12 @@
                 149
               ],
               [
-                "investors",
+                "as",
                 147
               ],
               [
-                "as",
-                144
+                "investors",
+                147
               ],
               [
                 "market",
@@ -1322,11 +1322,11 @@
                 81
               ],
               [
-                "markets",
+                "service",
                 79
               ],
               [
-                "service",
+                "markets",
                 79
               ],
               [
@@ -1363,11 +1363,11 @@
           "strict_coverage_passed": false,
           "practical_coverage": {
             "total_source_tokens": 30909,
-            "total_docx_tokens": 50867,
+            "total_docx_tokens": 50876,
             "matched_tokens": 28504,
             "missing_tokens_total": 2405,
             "missing_unique_tokens": 1157,
-            "extra_tokens_total": 22363,
+            "extra_tokens_total": 22372,
             "extra_unique_tokens": 2262,
             "coverage_ratio": 0.9221909476204342,
             "top_missing": [
@@ -1631,7 +1631,7 @@
               ],
               [
                 "by",
-                189
+                192
               ],
               [
                 "crowdfunding",
@@ -1658,12 +1658,12 @@
                 149
               ],
               [
-                "investors",
+                "as",
                 147
               ],
               [
-                "as",
-                144
+                "investors",
+                147
               ],
               [
                 "market",
@@ -1730,11 +1730,11 @@
                 81
               ],
               [
-                "markets",
+                "service",
                 79
               ],
               [
-                "service",
+                "markets",
                 79
               ],
               [
@@ -1780,18 +1780,18 @@
           "practical_min_coverage_threshold": 0.985,
           "practical_coverage_passed": false,
           "levenshtein": {
-            "docx_chars": 358408,
+            "docx_chars": 358450,
             "source_chars": 220146,
-            "distance": 301579,
-            "normalized_similarity": 0.15856082578290012,
+            "distance": 301935,
+            "normalized_similarity": 0.15766441523964908,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
           "token_levenshtein": {
-            "docx_tokens": 56753,
+            "docx_tokens": 56762,
             "source_tokens": 37207,
-            "distance": 19061,
-            "normalized_similarity": 0.6641336739037889,
+            "distance": 19102,
+            "normalized_similarity": 0.6634741244452957,
             "method": "estimated_from_sequence_matcher",
             "is_estimate": true
           },
